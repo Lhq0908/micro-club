@@ -1,0 +1,53 @@
+.core-material {
+  // 有头像的
+  .means-head {
+    background-color: #fff;
+    padding: 0 25rpx;
+    height: 145rpx;
+    line-height: 145rpx;
+    .a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 145rpx;
+      .head-img {
+        width: 96rpx;
+        height: 96rpx;
+        border-radius: 50%;
+      }
+
+      .fanhui {
+        width: 11rpx;
+        height: 21rpx;
+      }
+    }
+  }
+
+  .line {
+    border-bottom: 1px solid #eee;
+  }
+  // 我的资料
+  .means-region {
+    background-color: #fff;
+    padding: 0 25rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+
+    .a {
+      font-size: 30rpx;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fanhui {
+        width: 11rpx;
+        height: 21rpx;
+        display: block;
+      }
+    }
+  }
+
+  .means-region:nth-child(5) {
+    margin-top: 16rpx;
+  }
+}

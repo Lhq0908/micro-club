@@ -1,0 +1,49 @@
+<view class="activity-index">
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="search-input d-flex flex-nowrap align-items-center">
+        <image src="../../assets/search.png" />
+        <input placeholder="请输入关键词进行搜索" bindinput="bindChangeProperty" placeholder-class="placeholder" class="input"></input>
+      </view>
+      <image src="../../assets/search_close.png" class="close"></image>
+    </view>
+    <view class="btn">搜索</view>
+  </view>
+  <view class="mask" wx:if="{{flag}}">
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+    <view class="cityName">城市</view>
+  </view>
+  <view class="this-city">
+   <view class="top">
+    <view class="title">
+      当前城市
+    </view>
+    <view class="setting">
+      设为不限
+    </view>
+   </view>
+   <view class="button hover">
+    南宁
+   </view>
+  </view>
+  <view class="popular">
+    <view class="title">热门城市</view>
+    <view class="citys" wx:if="popularList.length > 0">
+      <view class="city" wx:for="{{popularList}}" data-index="{{index}}" wx:key="index">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="selectCity" wx:if="cityList.length > 0">
+    <view class="cityList" wx:for="{{cityList}}" wx:key="index">
+      <view class="title">{{item.index}}</view>
+      <view class="city" wx:for="{{item.cityArray}}" wx:key="index">城市</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,59 @@
+.core-means {
+  .means-li {
+    padding: 0 25rpx;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 30rpx;
+    color: #333;
+
+    .weui-input {
+      text-align: right;
+      font-size: 30rpx;
+      color: #999;
+    }
+  }
+
+  .means-region {
+    margin-top: 16rpx;
+    height: 98rpx;
+    padding: 0 25rpx;
+    display: flex;
+    font-size: 30rpx;
+    color: #333;
+    text-align: left;
+    align-items: center;
+    background-color: #fff;
+
+    .weui-input {
+      width: 525rpx;
+      font-size: 30rpx;
+      color: #999;
+      text-align: left;
+      margin-left: 30rpx;
+    }
+
+    image {
+      width: 11rpx;
+      height: 21rpx;
+    }
+  }
+
+  .li-sell {
+    border-bottom: 1px solid #eeeeee;
+  }
+  /*------------- 按扭 ------------*/
+  .buttom {
+    width: 526rpx;
+    background-color: #4299ff;
+    height: 84rpx;
+    border-radius: 42rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 32rpx;
+    margin: 115rpx auto 0;
+    line-height: 84rpx;
+  }
+}

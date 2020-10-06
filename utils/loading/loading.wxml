@@ -1,0 +1,10 @@
+<template name="loading">
+  <view wx:if="{{item}}" class="loadings">
+    <view class="loadings-view">
+      <image src='{{login_url||"../../../assets/loading_1.png"}}' class="loading-image"></image>
+    </view>
+    <view class="loading-text">
+      小游正在努力加载中，请稍等...
+    </view>
+  </view>
+</template>

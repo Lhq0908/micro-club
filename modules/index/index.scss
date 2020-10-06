@@ -1,0 +1,350 @@
+page {
+  background-color: #fbfbfb;
+}
+
+.index {
+  /* ---------- 搜索 --------- */
+  .search {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+    .search-item {
+      background-color: #fff;
+      margin: 25rpx 80rpx;
+      padding: 9rpx 25rpx;
+      border-radius: 40rpx;
+
+      .city {
+        width: 80rpx;
+        font-size: 28rpx;
+        color: #b9b9b9;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: wrap;
+        overflow: hidden;
+        border-right: 1px solid #eee;
+        margin-right: 10rpx;
+      }
+
+      .search-input {
+        flex: 1;
+
+        image {
+          width: 30rpx;
+          height: 30rpx;
+          display: block;
+          margin-right: 17rpx;
+        }
+
+        .input {
+          font-size: 28rpx;
+        }
+      }
+
+      .close {
+        width: 30rpx;
+        height: 30rpx;
+        display: block;
+        margin-right: 17rpx;
+      }
+    }
+  }
+  /* ---------- 轮播图 --------- */
+  .top-img {
+    width: 100%;
+    height: 538rpx;
+    position: relative;
+
+    swiper {
+      width: 100%;
+      height: 538rpx;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+      margin-bottom: 55rpx;
+    }
+
+    .swiper-box .wx-swiper-dot {
+      width: 14rpx;
+      display: inline-flex;
+      height: 14rpx;
+      margin-right: 8rpx;
+      justify-content: space-between;
+    }
+
+    .swiper-box .wx-swiper-dot-active {
+      width: 40rpx;
+      height: 14rpx;
+      border-radius: 6rpx;
+      background-color: red;
+    }
+  }
+  /* ---------- 模块 --------- */
+  .modular {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    margin-top: -50rpx;
+
+    .modular-item {
+      background-color: #fff;
+      margin: 0 25rpx;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #f7f7f7;
+
+      .ul {
+        padding: 30rpx 45rpx;
+        border-radius: 5px;
+
+        .li {
+          flex: 1;
+          text-align: center;
+
+          image {
+            width: 90rpx;
+            height: 90rpx;
+          }
+
+          text {
+            font-size: 22rpx;
+            color: #333333;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  /* ---------- 最新活动 --------- */
+  .activity {
+    padding: 0 25rpx;
+    margin-top: 50rpx;
+
+    .head {
+      color: #333333;
+      font-size: 32rpx;
+      margin-bottom: 35rpx;
+    }
+
+    .ul {
+      .li {
+        width: 343rpx;
+        height: 200rpx;
+        overflow: hidden;
+        border-radius: 5px;
+
+        image {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  /* ---------- 新入会员 --------- */
+  .new-member {
+    padding: 0 25rpx;
+    margin-top: 50rpx;
+
+    .head {
+      color: #333333;
+      font-size: 32rpx;
+      margin-bottom: 35rpx;
+    }
+
+    .ul {
+      .li {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #f7f7f7;
+        margin-bottom: 15rpx;
+
+        .li-top {
+          padding: 25rpx;
+          border-bottom: 1px solid #eeeeee;
+
+          image {
+            width: 83rpx;
+            height: 83rpx;
+            border-radius: 50%;
+            margin-right: 15rpx;
+          }
+
+          .li-top-right {
+            flex: 1;
+
+            .name {
+              font-size: 30rpx;
+              color: #333;
+            }
+
+            .profession {
+              background-color: #e14906;
+              padding: 5rpx 17rpx;
+              font-size: 20rpx;
+              color: #fff;
+              border-radius: 5px;
+              margin-right: 8rpx;
+            }
+
+            .return {
+              width: 16rpx;
+              height: 29rpx;
+            }
+          }
+        }
+
+        .li-end {
+          padding: 25rpx;
+
+          .corporate-name {
+            width: 100%;
+            color: #333333;
+            font-size: 28rpx;
+
+            image {
+              width: 34rpx;
+              height: 35rpx;
+              margin-right: 12rpx;
+            }
+
+            view {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+          }
+
+          .corporate-type {
+            font-size: 28rpx;
+            color: #999;
+            margin-top: 15rpx;
+          }
+        }
+      }
+    }
+  }
+  /* ---------- 行业资讯 --------- */
+  .industry {
+    padding: 0 25rpx;
+    margin-top: 50rpx;
+
+    .head {
+      color: #333333;
+      font-size: 32rpx;
+      margin-bottom: 35rpx;
+    }
+
+    .ul {
+      .li {
+        background: #fff;
+        padding: 35rpx 25rpx;
+        margin-bottom: 15rpx;
+        box-shadow: 0 0 5px #f7f7f7;
+        border-radius: 5px;
+
+        .li-left {
+          width: 255rpx;
+          margin-right: 25rpx;
+          border-radius: 5px;
+
+          image {
+            width: 255rpx;
+            height: 170rpx;
+            border-radius: 5px;
+          }
+        }
+        .li-left-one {
+          width:175rpx;
+          margin-right: 25rpx;
+          border-radius: 5px;
+
+          image {
+            width: 175rpx;
+            height: 175rpx;
+            border-radius: 5px;
+          }
+        }
+
+        .li-right {
+          flex: 1;
+          font-size: 28rpx;
+          color: #333333;
+
+          .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            white-space: wrap;
+            overflow: hidden;
+            margin-bottom: 35rpx;
+          }
+
+          .margin-b {
+            line-height: 40rpx;
+            margin-bottom: 0;
+          }
+
+          .sort {
+            background: #4299ff;
+            padding: 2rpx 15rpx;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            font-size: 24rpx;
+            margin-top: 5rpx;
+            margin-bottom: 10rpx;
+            display: inline-block;
+          }
+
+          .user {
+            font-size: 26rpx;
+            color: #999999;
+
+            .nickname {
+              flex: 1;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              margin-right: 10rpx;
+            }
+
+            .free {
+              color: #4299ff;
+            }
+
+            .dianban {
+              image {
+                width: 30rpx;
+                height: 30rpx;
+                display: block;
+                margin-right: 5rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      text-align: center;
+      font-size: 24rpx;
+      color: #999;
+      padding: 35rpx 25rpx;
+    }
+  }
+}

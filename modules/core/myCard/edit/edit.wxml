@@ -1,0 +1,11 @@
+<view clss="card-edit">
+  <view class="e-Template">
+    <view class="e-Template-title">名片模板</view>
+    <view class="e-Template-ul">
+      <view class="e-Template-li">
+        <image src="../../../../assets/core/edit_cdits01.png"></image>
+        
+      </view>
+    </view>
+  </view>
+</view>

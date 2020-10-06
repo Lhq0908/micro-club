@@ -1,0 +1,347 @@
+.searchFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  position: relative;
+}
+
+.search-head {
+  position: relative;
+  z-index: 10;
+}
+
+.head-top {
+  padding: 27rpx 25rpx;
+  background-color: #4299ff;
+}
+
+.top-box {
+  background-color: #fff;
+  padding: 5rpx 0;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  position: relative;
+}
+
+.top-box input {
+  width: 80%;
+  height: 66rpx;
+}
+
+.search-icon {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin: auto 17rpx;
+}
+
+.close-icon {
+  width: 41rpx;
+  height: 41rpx;
+  position: absolute;
+  top: 50%;
+  right: 23rpx;
+  margin-top: -20rpx;
+}
+
+scroll-view {
+  background-color: #f3f7fa;
+}
+.searchTabs{
+
+}
+.searchTabs .tabs{
+  display: flex;
+  height: 100rpx;
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+  padding: 0 25rpx;
+}
+.searchTabs .tabs text{
+  flex: 0 0 25%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.searchTabs .tabs-color{
+  color: #4299ff;
+}
+.searchTabs .tabs .tabs-color::after{
+  content: '';
+  position: absolute;
+  width: 57rpx;
+  height: 6rpx;
+  background-color: #4299ff;
+  bottom: -1rpx;
+  left: 50%;
+  margin-left: -28rpx;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+/* 课程和资讯 */
+.listContent{
+  display: flex;
+  background: #fff;
+  padding-left: 23rpx;
+  padding-right: 23rpx;
+  padding-top: 28rpx;
+  padding-bottom: 32rpx;
+  max-height: 255rpx;
+  margin-top: 24rpx;
+  border-radius: 18rpx;
+  box-shadow: 0px 1px 20px rgba(183,198,222,0.7);
+}
+.listContent .listImg{
+  overflow: hidden;
+  width: 256rpx;
+  height: 189rpx;
+  position: relative;
+  border-radius: 12rpx;
+  margin-right: 27rpx;
+}
+.listContent .listImg image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.news .listImg{
+  width: 172rpx;
+  height: 173rpx;
+  border-radius: 12rpx;
+}
+.listContent .other{
+  height: 189rpx;
+  position: relative;
+  flex: 1;
+}
+.news .other{
+  height: 176rpx;
+}
+.other .title{
+  font-size: 30rpx;
+  color: #333;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.other .sort{
+  display: inline-block;
+  background: #4299ff;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding: 0 16rpx;
+  font-size: 24rpx;
+  color: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 6rpx;
+  border-top-right-radius: 20rpx;
+  margin-bottom: 23rpx;
+}
+.listContent .c2bFlex{
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.listContent .colLeft{
+  font-size: 26rpx;
+  color: #4299ff;
+}
+.listContent .colRight image{
+  display: inline-block;
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+  vertical-align: middle;
+}
+.listContent .colRight text{
+  font-size: 24rpx;
+  color: #999;
+  vertical-align: middle;
+}
+/* 资源 */
+.resource{
+  background: #fff;
+  margin-top: 22rpx;
+  border-radius: 18rpx;
+  box-shadow: 0px 1px 20px rgba(183,198,222,0.7);
+}
+.nameTop{
+  padding: 26rpx 23rpx 22rpx;
+  position: relative;
+  padding-left: 133rpx;
+}
+.nameTop .nameImg{
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 23rpx;
+  top: 26rpx;
+}
+.nameTop .title{
+  font-size: 30rpx;
+  color: #333;
+}
+.nameTop .job{
+  font-size: 24rpx;
+  color: #999;
+}
+.nameTop .job image{
+  display: inline-block;
+  width: 52rpx;
+  height: 22rpx;
+  margin-left: 5rpx;
+}
+.resource .content{
+  font-size: 28rpx;
+  line-height: 34rpx;
+  color: #333;
+  padding: 20rpx 23rpx;
+}
+.resource .listImg{
+  padding: 0 23rpx 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.resource .listImg image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 16rpx;
+  margin-bottom: 10rpx;
+}
+.resource .c2bFlex{
+  padding: 0 23rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+}
+.resource .c2bFlex .colLeft{
+  font-size: 26rpx;
+  color: #999;
+}
+.resource .c2bFlex .colRight text{
+  font-size: 24rpx;
+  color: #999;
+}
+.resource .c2bFlex .colRight image{
+  width: 23rpx;
+  height: 23rpx;
+  display: inline-block;
+  margin-right: 5rpx;
+}
+.resource .c2bFlex .colRight .giveIcon{
+  width: 30rpx;
+  height: 29rpx;
+  margin-left: 30rpx;
+}
+/* 活动 */
+.notRecommend{
+  background: rgb(243, 247, 250);
+  padding-left:25rpx;
+}
+.notRecommend text{
+  display: block;
+  line-height: 110rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.notRecommend text:last-child{
+  line-height: 40rpx;
+}
+.listActivity{
+  background: #fff;
+  margin-top: 22rpx;
+  border-radius: 18rpx;
+  box-shadow: 0px 1px 20px rgba(183,198,222,0.7);
+}
+.listActivity .listTop{
+  padding: 27rpx 23rpx 6rpx;
+  display: flex;
+}
+.listActivity .listTop .listImg{
+  display: block;
+  width: 256rpx;
+  height: 157rpx;
+  margin-right: 21rpx;
+  position: relative;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.listActivity .listTop .listImg image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.listActivity .listTop .title{
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 44rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.time{
+  border-bottom: 2rpx solid #eee;
+  line-height: 72rpx;
+  padding: 0 23rpx;
+}
+.time .addressData{
+  font-size: 26rpx;
+  color: #999;
+}
+.signUp{
+  height: 110rpx;
+  line-height: 110rpx;
+  padding: 0 23rpx;
+}
+.signUp .colLeft{
+  font-size: 26rpx;
+  color: #999;
+}
+.signUp .nameRight image{
+  display: inline-block;
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin-left: -10rpx;
+  margin-top: 27rpx;
+}
+.signUp .nameRight image:last-child{
+  margin-left: 0;
+}
+.time .colRight image{
+  display: inline-block;
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+  vertical-align: middle;
+}
+.time .colRight text{
+  font-size: 24rpx;
+  color: #999;
+  vertical-align: middle;
+}

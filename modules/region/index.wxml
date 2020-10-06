@@ -1,0 +1,69 @@
+<view class="region-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="d-flex align-items-center">
+      <image src="../../assets/search.png"></image>
+      <input placeholder="请输入关键字" placeholder-class="placeholder" class="input"></input>
+      <image src="../../assets/search_close.png"></image>
+    </view>
+  </view>
+  <!-- 切换区域 -->
+  <view class="region-item">
+    <view class="title">切换区域</view>
+    <view class="ul d-flex flex-wrap align-items-center">
+      <view class="li on">市级</view>
+      <view class="li">省级</view>
+      <view class="li">不限</view>
+    </view>
+  </view>
+  <!-- 当前区域 -->
+  <view class="region-item">
+    <view class="title">当前区域</view>
+    <view class="ul d-flex flex-wrap align-items-center">
+      <view class="li on d-flex flex-wrap align-items-center">
+        <image src="../../assets/location.png"></image>南宁</view>
+    </view>
+  </view>
+  <!-- 热门 -->
+  <view class="region-item">
+    <view class="title">热门</view>
+    <view class="ul d-flex flex-wrap align-items-center">
+      <view class="li on">南宁</view>
+      <view class="li">上海</view>
+      <view class="li">北京</view>
+      <view class="li">杭州</view>
+      <view class="li">成都</view>
+      <view class="li">天津</view>
+    </view>
+  </view>
+  <!-- 城市列表 -->
+  <view class="city-list">
+    <view class="city-list-item">
+      <view class="city-letter">A</view>
+      <view class="ul">
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+      </view>
+    </view>
+    <view class="city-list-item">
+      <view class="city-letter">B</view>
+      <view class="ul">
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+        <view class="li">城市名</view>
+      </view>
+    </view>
+  </view>
+
+</view>

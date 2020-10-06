@@ -1,0 +1,53 @@
+<view class="card-index">
+  <view class="card">
+    <image src="../../../../assets/enterprise/card_bg.png" class="card-bg" style="height:{{scrollHeight}}px;" />
+    <view class="card-c">
+      <view class="card-item">
+        <image src="../../../../assets/index/banner.png" class="picture" />
+        <view class="name">设置你的昵称</view>
+        <view class="company-name">
+          <view>广西南宁环球国际旅行社有限公司</view>
+          <!-- <view>董事长</view> -->
+        </view>
+        <view class="company-name">
+          <view>广西南宁环球国际旅行社有限公司</view>
+          <view>董事长</view>
+        </view>
+        <image src="../../../../assets/enterprise/more.png" class="more" />
+      </view>
+      <view class="share">
+        <view class="share-title">分享到</view>
+        <view class="share-ul d-flex flex-nowrap align-items-center justify-content-between">
+          <view class="share-li">
+            <image src="../../../../assets/enterprise/wechat.png"></image>
+            微信好友
+          </view>
+          <view class="share-li">
+            <image src="../../../../assets/enterprise/friends.png"></image>
+            朋友圈
+          </view>
+          <view class="share-li">
+            <image src="../../../../assets/enterprise/qq.png"></image>
+            QQ好友
+          </view>
+
+          <view class="share-li">
+            <image src="../../../../assets/enterprise/blog.png"></image>
+            新浪微博
+          </view>
+          <view class="share-li">
+            <image src="../../../../assets/enterprise/code.png"></image>
+            二维码
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="cardButtom">
+    <view class="cardButtom-text">
+      <text>编辑</text>
+      <image src="../../../../assets/core/ellipse.png"></image>
+    </view>
+  </view>
+</view>

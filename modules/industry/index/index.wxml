@@ -1,0 +1,116 @@
+<view class="industry-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="d-flex align-items-center">
+      <image src="../../../assets/search.png"></image>
+      <input placeholder="请输入关键字搜索" placeholder-class="placeholder" class="input" bindinput='getSearch' value='{{search}}'></input>
+      <image src="../../../assets/search_close.png" wx:if="{{search !=''}}" bindtap='empty'></image>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="industry">
+    <view class="ul">
+      <view class="li ">
+        <navigator url="../details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li ">
+        <navigator url="../details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li ">
+        <navigator url="../details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li ">
+        <navigator url="../details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li ">
+        <navigator url="../details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="more">没有更多内容啦~</view>
+  </view>
+</view>

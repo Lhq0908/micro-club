@@ -1,0 +1,129 @@
+.cr-tutorDetails {
+  margin: 25rpx;
+  /*------------ 头部导师信息 ------*/
+  .cr-head {
+    border-radius: 10rpx;
+    background-color: #fff;
+
+    image {
+      display: block;
+      height: 720rpx;
+      width: 100%;
+      border-radius: 10rpx 10rpx 0 0;
+    }
+
+    .head-name {
+      margin: 34rpx 24rpx 45rpx;
+      font-size: 28rpx;
+      color: #999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .name {
+        font-size: 34rpx;
+        color: #333;
+        text-align: left;
+      }
+    }
+
+    .cr-version {
+      margin: 0 25rpx;
+      font-size:28rpx;
+      color: #666;
+    }
+  }
+  /*------------ 导师的课程 ------*/
+  .cr-course{
+    margin-top: 63rpx;
+    .course-title{
+      font-size: 32rpx;
+      color:#333;
+      text-align:left;
+      margin-bottom: 32rpx;
+    }
+    .ul {
+      .li {
+        background: #fff;
+        padding: 35rpx 25rpx 30rpx;
+        margin-bottom: 15rpx;
+        box-shadow: 0 0 5px #f7f7f7;
+        border-radius: 5px;
+
+        .li-left {
+          width:256rpx;
+          margin-right: 25rpx;
+          border-radius: 5px;
+
+          image {
+            width: 256rpx;
+            height: 190rpx;
+            border-radius: 5px;
+          }
+        }
+
+        .li-right {
+          flex: 1;
+          font-size: 30rpx;
+          color: #333333;
+
+          .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            white-space: wrap;
+            overflow: hidden;
+            margin-bottom: 35rpx;
+          }
+
+          .margin-b {
+            line-height: 40rpx;
+            margin-bottom: 0;
+          }
+
+          .sort {
+            background: #4299ff;
+            padding: 2rpx 15rpx;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            font-size: 24rpx;
+            margin-top: 5rpx;
+            margin-bottom: 10rpx;
+            display: inline-block;
+          }
+
+          .user {
+            font-size: 26rpx;
+            color: #999999;
+
+            .nickname {
+              flex: 1;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              margin-right: 10rpx;
+            }
+
+            .free {
+              color: #4299ff;
+            }
+
+            .dianban {
+              image {
+                width: 30rpx;
+                height: 30rpx;
+                display: block;
+                margin-right: 5rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

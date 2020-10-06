@@ -1,0 +1,90 @@
+<view class="classroom-list">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="city">南宁</view>
+      <view class="search-input d-flex flex-nowrap align-items-center">
+        <image src="../../../assets/search.png" />
+        <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input" bindinput="bindKeyInput" value='{{value}}'></input>
+      </view>
+      <image src="../../../assets/search_close.png" class="close" wx:if="{{value !=0}}" bindtap="empty"></image>
+    </view>
+  </view>
+  <!-- 切换 -->
+  <view class="tabs">
+    <text wx:for="{{tabs}}" wx:for-index="index" wx:key="index" bindtap="tabClick" class="{{current==index ? 'tabs-color' : ''}}" data-index="{{index}}">{{item}}</text>
+    <!-- <view class="bottom-move" style="left:{{left}}px"></view> -->
+  </view>
+  <!-- 列表 -->
+  <view class="c-list">
+    <!-- current="{{current}}" -->
+    <swiper class="" current="{{current}}" bindchange="swiperChange" style="height:{{scrollHeight}}px;">
+      <swiper-item  catchtouchmove='catchTouchMove'>
+        <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+          <view class="ul">
+            <view class="li  d-flex flex-nowrap justify-content-between">
+              <view class="li-left">
+                <image src="../../../assets/index/banner.png" />
+              </view>
+              <view class="li-right">
+                <view class="title margin-b">
+                  标题标题标题标题标题标题标题标题标题标题标题标题标题
+                </view>
+                <text class="sort">分类</text>
+                <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="free">
+                    会员免费
+                  </view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="li  d-flex flex-nowrap justify-content-between">
+              <view class="li-left">
+                <image src="../../../assets/index/banner.png" />
+              </view>
+              <view class="li-right">
+                <view class="title margin-b">
+                  标题标题标题标题标题标题标题标题标题标题标题标题标题
+                </view>
+                <text class="sort">分类</text>
+                <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="free">
+                    会员免费
+                  </view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="li  d-flex flex-nowrap justify-content-between">
+              <view class="li-left">
+                <image src="../../../assets/index/banner.png" />
+              </view>
+              <view class="li-right">
+                <view class="title margin-b">
+                  标题标题标题标题标题标题标题标题标题标题标题标题标题
+                </view>
+                <text class="sort">分类</text>
+                <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="free">
+                    会员免费
+                  </view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<!-- 授权用户信息弹框 -->
+<import src="../../../utils/wxApi/component/authDialog.wxml" />
+<template is="msgItem" data="{{..._authdialog_}}" />

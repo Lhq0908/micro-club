@@ -1,0 +1,59 @@
+.company-edit{
+  .item {
+    margin-bottom: 16rpx;
+
+    .means-region {
+      height: 98rpx;
+      padding: 0 25rpx;
+      display: flex;
+      font-size: 30rpx;
+      color: #333;
+      text-align: left;
+      align-items: center;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+
+      .weui-input {
+        width: 525rpx;
+        font-size: 30rpx;
+        color: #333;
+        text-align: left;
+        margin-left: 30rpx;
+      }
+      .text-r{
+        text-align: right;
+      }
+      image {
+        width: 11rpx;
+        height: 21rpx;
+      }
+      .del{
+        color: #4299ff;
+      }
+    }
+
+    .means-item {
+      height: 200rpx;
+      padding: 25rpx;
+      align-items: flex-start;
+      .textarea-bg {
+        height: 200rpx;
+        padding-top: 1rpx;
+        margin-left: 30rpx;
+        font-size: 30rpx;
+        color: #333;
+      }
+    }
+    .buttom {
+      width: 526rpx;
+      background-color: #4299ff;
+      height: 84rpx;
+      border-radius: 42rpx;
+      text-align: center;
+      color: #fff;
+      font-size: 32rpx;
+      margin: 100rpx auto 0;
+      line-height: 84rpx;
+    }
+  }
+}

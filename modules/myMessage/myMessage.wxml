@@ -1,0 +1,42 @@
+<!--modules/myMessage/myMessage.wxml-->
+<view class="my-message">
+  <view class="card">
+    <view class="time">2019-03-03  18:45</view>
+    <view class="content">
+      <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+      <view class="row">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内</view>
+      <view class="img">我是图片</view>
+    </view>
+  </view>
+  <view class="message">
+    <view class="time">2019-03-03  18:45</view>
+    <view class="content">
+      <view class="title">李小小、黄小小、周小小等 20 人赞了你的资源</view>
+      <view class="original">
+        <view class="text">[原文]内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内</view>
+      </view>
+    </view>
+  </view>
+  <view class="message">
+    <view class="time">2019-03-03  18:45</view>
+    <view class="content">
+      <view class="title">李小小、黄小小、周小小等 20 人赞了你的资源</view>
+      <view class="original">
+        <view class="text">[原文]内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内</view>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <view class="time">2019-03-03  18:45</view>
+    <view class="content">
+      <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+      <view class="row">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内</view>
+      <view class="img">我是图片</view>
+    </view>
+  </view>
+  <view class="floating-button">
+    <view class="text">
+      全部设为已读
+    </view>
+  </view>
+</view>

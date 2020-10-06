@@ -1,0 +1,29 @@
+<view class="enterprise-details">
+  <view class="d-business">
+    <image class='bi-img' src='../../../assets/en/details/cotpp.png'></image>
+    <view class="bi-storage">
+      <image src='../../../assets/en/details/storage.png'></image>
+      存入名片夹
+    </view>
+  </view>
+  <view class="d-company">
+    <view class="company-title">广西南宁环球国际旅行社有限公司</view>
+    <view class="company-ul">
+      <view class="company-li" wx:for="{{list}}" wx:key="item">
+        <view class='li-name'>{{item.title}}</view>
+        <view class='li-explain'>{{item.explain}}</view>
+      </view>
+    </view>
+    <view class="company-img">
+      <image src="../../../assets/en/details/map.png"></image>
+    </view>
+  </view>
+  <view class="d-brief">
+    <view class="brief-name">公司简介</view>
+    <view class="brief-conter">
+      环球国旅集团创立于2003年，广西知名旅游景点的最大地接服务商，南宁市唯一同时拥有车队、景区和酒店的旅行社，组织接待超过数百万游客于国内旅游及出境旅游。
+      <image src="../../../assets/en/details/cotpp.png"></image>
+      现已发展成为广西南宁环球国旅集团。集团旗下拥有广西南宁环球国际旅行社有限公司、广西西途比网络科技有限公司、省游灯科技有限公司、广西清河环保科技有限公司、广西永安建设工程有限公司、广西天等天地一品房地产有限公司、广西南宁童星教育投资有限公司等。产业涵盖地产、建筑工程、教育、农业、互联网、旅游、环保等多个领域。
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<template name="msgItem">
+  <view class="authModal" wx:if="{{isShow}}">
+    <view class="m-box">
+      <text class="msg-content">欢迎访问企乐汇</text>
+      <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type="primary" class="auth-login-btn">使用微信登录</button>
+    </view>
+  </view>
+</template>

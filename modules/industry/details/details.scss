@@ -1,0 +1,73 @@
+page {
+  background-color: #fbfbfb;
+}
+.industry-details {
+  margin:0 25rpx;
+
+  .title {
+    font-size: 32rpx;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    white-space: wrap;
+    overflow: hidden;
+    margin-bottom: 30rpx;
+    margin-top: 20rpx;
+  }
+
+  .nickname {
+    font-size: 28rpx;
+    color: #999;
+    text-align: right;
+  }
+    /* ---------- 详情内容 --------- */
+  .details-content {
+    padding: 25rpx;
+    font-size: 28rpx;
+    color: #333333;
+
+    .text {
+      text-align: justify;
+      text-indent: 40rpx;
+      margin-top: 20rpx;
+    }
+
+    .img {
+      width: 100%;
+      height: 410rpx;
+      margin-top: 25rpx;
+
+      image {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+
+    .time {
+      color: #999999;
+
+      .time-left {
+        flex: 1;
+      }
+
+      .time-right {
+        width: 30%;
+        padding: 35rpx 0;
+
+        image {
+          width: 30rpx;
+          height: 30rpx;
+          display: block;
+          margin-right: 5rpx;
+        }
+
+        .gratis {
+          color: #4299ff;
+        }
+      }
+    }
+  }
+}

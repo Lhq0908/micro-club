@@ -1,0 +1,145 @@
+.activity-details {
+  .details-top {
+    padding: 25rpx;
+    background: #fff;
+
+    .title {
+      font-size: 32rpx;
+      color: #333333;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      white-space: wrap;
+      overflow: hidden;
+      margin-bottom: 30rpx;
+    }
+
+    .top-item {
+      font-size: 28rpx;
+      color: #333333;
+      margin-bottom: 20rpx;
+
+      view {
+        flex: 1;
+      }
+
+      .gratis {
+        color: #4299ff;
+      }
+    }
+  }
+
+  .details-content {
+    background-color: #fff;
+    padding: 25rpx;
+    font-size: 28rpx;
+    color: #333333;
+    margin-top: 25rpx;
+
+    .text {
+      text-align: justify;
+      text-indent: 40rpx;
+    }
+
+    .img {
+      width: 100%;
+      height: 410rpx;
+      margin-top: 25rpx;
+
+      image {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+
+    .time {
+      color: #999999;
+
+      .time-left {
+        flex: 1;
+      }
+
+      .time-right {
+        width: 30%;
+        padding: 35rpx 0;
+
+        image {
+          width: 30rpx;
+          height: 30rpx;
+          display: block;
+          margin-right: 5rpx;
+        }
+
+        .gratis {
+          color: #4299ff;
+        }
+      }
+    }
+
+    .btn {
+      margin: 50rpx 50rpx 0;
+      padding: 25rpx 0;
+      background-color: #4299ff;
+      color: #fff;
+      border-radius: 50rpx;
+      text-align: center;
+    }
+
+    .end {
+      background-color: #d4d4d4;
+    }
+  }
+
+  .details-record {
+    background-color: #fff;
+    padding: 25rpx;
+    font-size: 28rpx;
+
+    .record-title {
+      margin-bottom: 30rpx;
+
+      .number {
+        color: #999999;
+      }
+    }
+
+    .nodata {
+      padding: 40rpx 0;
+      text-align: center;
+      color: #999999;
+
+      image {
+        width: 102rpx;
+        height: 102rpx;
+        display: inline-block;
+        margin-bottom: 25rpx;
+      }
+    }
+
+    .record-ul {
+      .record-li {
+        padding: 15rpx 0;
+        border-top: 1px solid #eee;
+
+        image {
+          width: 80rpx;
+          height: 80rpx;
+          border-radius: 50%;
+          margin-right: 15rpx;
+        }
+
+        .name {
+          font-size: 30rpx;
+          color: #333;
+        }
+
+        .enrolment {
+          font-size: 26rpx;
+          color: #999999;
+        }
+      }
+    }
+  }
+}

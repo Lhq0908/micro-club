@@ -1,0 +1,93 @@
+page {
+  background: #fff;
+}
+
+.resource-add {
+  .textarea {
+    margin: 25rpx 25rpx 0;
+    .textarea-bg {
+      width: 100%;
+      font-size: 30rpx;
+      color: #999999;
+    }
+  }
+
+  textarea {
+    height: 600rpx;
+  }
+
+  .picture-box {
+    margin-top: 30rpx;
+    margin-bottom: 100rpx;
+    padding: 0 25rpx;
+
+    .upload {
+      width: 205rpx;
+      height: 205rpx;
+      line-height: 205rpx;
+      text-align: center;
+      border: 1px solid #eee;
+      margin-right: 30rpx;
+
+      .img {
+        width: 26rpx;
+        height: 26rpx;
+        display: inline-block;
+      }
+    }
+
+    .picture {
+      width: 205rpx;
+      height: 205rpx;
+      position: relative;
+      margin-right: 30rpx;
+      margin-bottom: 30rpx;
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .del-icon {
+        position: absolute;
+        top: -10rpx;
+        right: -15rpx;
+        width: 40rpx;
+        height: 40rpx;
+      }
+    }
+
+    .picture:nth-child(3n+3) {
+      margin-right: 0;
+    }
+
+    .video {
+      width: 100%;
+      height: 500rpx;
+      position: relative;
+      margin-bottom: 20rpx;
+      video {
+        width: 100%;
+        height: 100%;
+      }
+
+      .del-icon {
+        position: absolute;
+        top: -10rpx;
+        right: -15rpx;
+        width: 40rpx;
+        height: 40rpx;
+      }
+    }
+  }
+
+  .btn {
+    position: fixed;
+    bottom: 0;
+    right: 40rpx;
+    image{
+      width: 134rpx;
+      height: 134rpx;
+    }
+  }
+}

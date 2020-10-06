@@ -1,0 +1,16 @@
+<view class="core-means">
+  <view class="means-li li-sell">
+    <text>真实姓名</text>
+    <input class="weui-input" auto-focus placeholder="黄小小" />
+  </view>
+  <view class="means-li">
+    <text>身份证号</text>
+    <input class="weui-input" auto-focus placeholder="450************1" />
+  </view>
+  <view class="means-region">
+    <text>所在区域</text>
+    <input class="weui-input" auto-focus placeholder="广西壮族自治区 南宁市" />
+    <image src='../../../assets/core/fanhui.png'></image>
+  </view>
+  <view class="buttom">保存</view>
+</view>

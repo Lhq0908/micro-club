@@ -1,0 +1,21 @@
+<view class="setting">
+  <i-cell-group>
+    <i-cell title="公开头像">
+      <switch slot="footer" checked color='#4299ff' />
+    </i-cell>
+    <i-cell title="公开手机">
+      <switch slot="footer" checked color='#4299ff' />
+    </i-cell>
+    <view class="item">
+      <i-cell title="通知我点赞情况">
+        <switch slot="footer" checked color='#4299ff' />
+      </i-cell>
+      <i-cell title="通知我评论情况">
+        <switch slot="footer" checked color='#4299ff' />
+      </i-cell>
+      <i-cell title="通知我回复情况">
+        <switch slot="footer" checked color='#4299ff' />
+      </i-cell>
+    </view>
+  </i-cell-group>
+</view>

@@ -1,0 +1,122 @@
+<view class="enterprise-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="d-flex align-items-center">
+      <image src="../../../assets/search.png"></image>
+      <input placeholder="请输入法人姓名/公司名/行业进行搜索" placeholder-class="placeholder" class="input" bindinput='getSearch' value="{{search}}"></input>
+      <image src="../../../assets/search_close.png" wx:if="{{search !=''}}" bindtap='empty'></image>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="new-member">
+    <view class="ul">
+      <view class="li">
+        <navigator url="../details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+
+      <view class="li">
+        <navigator url="../details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="more">没有更多内容啦~</view>
+
+</view>

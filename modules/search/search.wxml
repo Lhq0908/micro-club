@@ -1,0 +1,197 @@
+<!-- // +----------------------------------------------------------------------
+// | 广西西途比网络科技有限公司 www.c2b666.com
+// +----------------------------------------------------------------------
+// | 功能描述: 搜索页面
+// +----------------------------------------------------------------------
+// | 时　　间: 2019/10/07 11:30
+// +----------------------------------------------------------------------
+// | 代码创建: 侯武昌 <741809485@qq.com>
+// +----------------------------------------------------------------------
+// | 版本信息: V1.0.0
+// +----------------------------------------------------------------------
+// | 代码修改:（修改人 - 修改时间）
+// +---------------------------------------------------------------------- -->
+<view class="search">
+  <view class="search-head">
+    <view class="head-top">
+      <view class="top-box">
+        <image class="search-icon" src="../../assets/search.png" />
+        <input type="text" placeholder='请输入关键词' value='{{search}}' bindblur="onblur" bindinput="onSearch" bindconfirm="confSearch" maxlength='15'/>
+        <image class="close-icon" wx:if="{{iconShow}}" bindtap='emptys' src="../../assets/close.png" />
+
+      </view>
+    </view>
+    <view class="searchTabs">
+      <!-- <i-tabs current="{{ current }}" bindchange="handleChange">
+          <i-tab key="tab1" title="课程"></i-tab>
+          <i-tab key="tab2" title="资源"></i-tab>
+          <i-tab key="tab3" title="活动"></i-tab>
+          <i-tab key="tab4" title="资讯"></i-tab>
+      </i-tabs> -->
+      <view class="tabs">
+        <text wx:for="{{tabs}}" wx:for-index="index" wx:key="index" bindtap="tabClick" class="{{current==index ? 'tabs-color' : ''}}" data-index="{{index}}">{{item}}</text>
+      </view>
+    </view>
+  </view>
+<swiper class="swiper-wrapper" style="height:{{scrollHeight}}px;" current="{{current}}">
+    <!-- 课程 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" scroll-top='{{topNum}}' bindscroll="scrolltoupper" style="height:{{scrollHeight}}px;" bindscrolltolower="loadData">
+        <!-- Tabs内容块 -->
+        <view style="padding: 0 25rpx;">
+          <view class="listContent" wx:for="{{listContent}}" wx:key="index" >
+            <view class="listImg">
+              <image src="../../assets/statics01.png"></image>
+            </view>
+            <view class="other">
+              <view class="title">标题标题标题标题标题标题标题标题</view>
+              <view class="sort">分类</view>
+              <view class="c2bFlex searchFlex">
+                <view class="colLeft">
+                  会员免费
+                </view>
+                <view class="colRight">
+                  <image src="../../assets/give.png"></image>
+                  <text>221</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="not-data" wx:if="{{notShow}}">
+          <image class="not-icon" src='../../assets/city/empty.png'/>
+          <view style='line-height:60rpx;'>没有找到相关的旅游线路~</view>
+        </view>
+        <view class="more-s" wx:if="{{more}}">—— 到底了哦 ——</view>
+        <!-- <view class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"><image  src="../../assets/top-icon.png"/></view> -->
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 资源 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" scroll-top='{{topNum}}' bindscroll="scrolltoupper" style="height:{{scrollHeight}}px;" bindscrolltolower="loadData">
+        <!-- Tabs内容块 -->
+        <view style="padding: 0 25rpx;">
+          <view class="resource">
+            <view class="nameTop">
+              <image class="nameImg" src="../../assets/statics05.png"></image>
+              <view class="title">设置你的昵称</view>
+              <view class="job">
+                广西南宁.冶金制造/电子商务 <image src="../../assets/VIP.png"></image>
+              </view>
+            </view>
+            <view class="content">
+              内容啊内容啊内容啊内容啊内容啊内容啊内容啊内容啊啊啊啊啊啊啊
+            </view>
+            <view class="listImg">
+              <image src="../../assets/statics06.png"></image>
+              <image src="../../assets/statics06.png"></image>
+              <image src="../../assets/statics06.png"></image>
+              <image src="../../assets/statics06.png"></image>
+            </view>
+            <view class="c2bFlex searchFlex">
+                <view class="colLeft">
+                  2019-08-26 15:00
+                </view>
+                <view class="colRight">
+                  <image src="../../assets/discuss.png"></image>
+                  <text>231</text>
+                  <image class="giveIcon" src="../../assets/give02.png"></image>
+                  <text>266</text>
+                </view>
+              </view>
+          </view>
+        </view>
+
+        <view class="not-data" wx:if="{{notShow}}">
+          <image class="not-icon" src='../../assets/city/empty.png'/>
+          <view style='line-height:60rpx;'>没有找到相关的旅游线路~</view>
+        </view>
+        <view class="more-s" wx:if="{{more}}">—— 到底了哦 ——</view>
+        <!-- <view class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"><image  src="../../assets/top-icon.png"/></view> -->
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 活动 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" scroll-top='{{topNum}}' bindscroll="scrolltoupper" style="height:{{scrollHeight}}px;" bindscrolltolower="loadData">
+        <!-- Tabs内容块 -->
+        <view style="padding: 0 25rpx;">
+          <!-- 推荐 -->
+          <view class="notRecommend">
+            <text>没有找到符合条件的记录呢~</text>
+            <text>给您推荐: </text>
+          </view>
+          <view class="listActivity" wx:for="{{listActivity}}" wx:key="index" >
+            <view class="listTop">
+              <view class="listImg">
+                <image src="../../assets/classroom/haed.png"></image>
+              </view>
+              <view class="title">标题标题标题标题标题标题标题标题标题标题标标题标题标标题标题标</view>
+            </view>
+            <view class="time searchFlex">
+              <view class="addressData">广西南宁.截至2019-08-08 15:00</view>
+              <view class="colRight">
+                <image src="../../assets/give.png"></image>
+                <text>221</text>
+              </view>
+            </view>
+            <view class="signUp searchFlex">
+                <view class="colLeft">
+                  报名数 15/不限
+                </view>
+                <view class="nameRight">
+                  <image src="../../assets/statics04.png"></image>
+                  <image src="../../assets/statics04.png"></image>
+                  <image src="../../assets/statics04.png"></image>
+                  <image src="../../assets/statics04.png"></image>
+                  <image src="../../assets/moreIcon.png"></image>
+                </view>
+              </view>
+          </view>
+        </view>
+
+        <view class="not-data" wx:if="{{notShow}}">
+          <image class="not-icon" src='../../assets/city/empty.png'/>
+          <view style='line-height:60rpx;'>没有找到相关的旅游线路~</view>
+        </view>
+        <view class="more-s" wx:if="{{more}}">—— 到底了哦 ——</view>
+        <!-- <view class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"><image  src="../../assets/top-icon.png"/></view> -->
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 资讯 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" scroll-top='{{topNum}}' bindscroll="scrolltoupper" style="height:{{scrollHeight}}px;" bindscrolltolower="loadData">
+        <!-- Tabs内容块 -->
+        <view style="padding: 0 25rpx;">
+          <view class="listContent news" wx:for="{{listContent}}" wx:key="index" >
+            <view class="listImg">
+              <image src="../../assets/statics02.png"></image>
+            </view>
+            <view class="other">
+              <view class="title">标题标题标题标题标题标题标题标题</view>
+              <view class="c2bFlex searchFlex">
+                <view class="colLeft">
+                  会员免费
+                </view>
+                <view class="colRight">
+                  <image src="../../assets/give.png"></image>
+                  <text>221</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="not-data" wx:if="{{notShow}}">
+          <image class="not-icon" src='../../assets/city/empty.png'/>
+          <view style='line-height:60rpx;'>没有找到相关的旅游线路~</view>
+        </view>
+        <view class="more-s" wx:if="{{more}}">—— 到底了哦 ——</view>
+        <!-- <view class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"><image  src="../../assets/top-icon.png"/></view> -->
+      </scroll-view>
+    </swiper-item>
+</swiper>
+</view>

@@ -1,0 +1,140 @@
+<view class="club-details">
+  <!-- 头部 -->
+  <view class="top ">
+    <view class="head d-flex align-items-center justify-content-between">
+      <view class="name">
+        南宁俱乐部
+      </view>
+      <view class="location">
+        <navigator url="../map/map" class="d-flex align-items-center">
+          <image src="../../../assets/location.png" />
+          <text>查看位置</text>
+          <image src="../../../assets/index/return.png" />
+        </navigator>
+      </view>
+    </view>
+    <view class="li-top d-flex flex-wrap align-items-center">
+      <image src="../../../assets/index/banner.png" />
+      <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+        <view>
+          <view class="name">黄小小</view>
+          <view class="d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="profession">VIP</view>
+            <view class="profession">南宁俱乐部负责人</view>
+            <view class="compan-name">广西南宁·科技/电子商务</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="details-content">
+      <view class="content-item">
+        <view class="text">
+          爱香的朋友大多听过沉香精油，沉香精油可谓是沉香之精华，能称作精华肯定有非凡的 使用价值。 作为一个沉香精油工厂的员工，希望能够让大家详细了解一下，一瓶沉香精油，是要经过多少程序才能制作而成。首先，我们的沉香都是采用的野生沉香，沉香结沉是很难得的，野生沉香更是不常有，作为沉香精油提取的原材料，它们的性状都会比较的细碎，油脂的丰腴度也不会太高，需要大量原材料才能提取出来一点。
+        </view>
+        <view class="img">
+          <image src="../../../assets/index/banner.png"></image>
+        </view>
+      </view>
+      <view class="open">
+      <view class="open-item">
+      <view>展开全部</view>
+      <image src="../../../assets/more_01.png" />
+      </view>
+
+      </view>
+
+
+    </view>
+
+
+  </view>
+  <!-- 法人课堂 -->
+  <view class="content">
+    <view class="ul">
+      <view class="li">
+        <navigator url="../../memberActivity/details/details" hover-class="none">
+          <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+          <view class="img">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="time d-flex flex-nowrap align-items-center">
+            <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+            <view class="dianban d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/dianban.png" /> 11111
+            </view>
+          </view>
+          <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="number-item">
+              报名数 15/不限
+            </view>
+            <view class="number-picture d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/ellipsis.png" class="ellipsis" />
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../../memberActivity/details/details" hover-class="none">
+          <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+          <view class="img">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="time d-flex flex-nowrap align-items-center">
+            <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+            <view class="dianban d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/dianban.png" /> 11111
+            </view>
+          </view>
+          <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="number-item">
+              报名数 15/不限
+            </view>
+            <view class="number-picture d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/ellipsis.png" class="ellipsis" />
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../../memberActivity/details/details" hover-class="none">
+          <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+          <view class="img">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="time d-flex flex-nowrap align-items-center">
+            <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+            <view class="dianban d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/dianban.png" /> 11111
+            </view>
+          </view>
+          <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="number-item">
+              报名数 15/不限
+            </view>
+            <view class="number-picture d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/index/banner.png" />
+              <image src="../../../assets/ellipsis.png" class="ellipsis" />
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="more">没有更多内容啦~</view>
+  </view>
+
+
+</view>

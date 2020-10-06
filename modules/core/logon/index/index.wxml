@@ -1,0 +1,28 @@
+<view class="logonIndex">
+  <view class="i-information">
+    <view class="btn-weui elastic">
+      <image src="../../../../assets/core/wo.png"></image>
+      <input class="weui-input" placeholder="请输入手机号" />
+    </view>
+    <view class="btn-code">
+      <view class='elastic'>
+        <image src="../../../../assets/core/verify_fill.png" class="btn-img"></image>
+        <input class="weui-input" placeholder="请输入4位数验证码" />
+      </view>
+      <text class="code">获取验证码</text>
+    </view>
+    <view class="error elastic">
+      <image src="../../../../assets/core/error.png"></image>
+      <text>验证码错误</text>
+    </view>
+  </view>
+  <view class="i-foot">
+    <view class="i-buttom">登录</view>
+    <image class="i-img" src='../../../../assets/core/wx_icon.png'></image>
+    <view class='i-text'>
+     <navigator url="../../profileData/profileData" hover-class="none" class='a'>
+      <text>没有账号？企业法人点此申请加入</text>
+      </navigator>
+    </view>
+  </view>
+</view>

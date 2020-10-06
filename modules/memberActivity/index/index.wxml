@@ -1,0 +1,147 @@
+<view class="activity-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="city">南宁</view>
+      <view class="search-input d-flex flex-nowrap align-items-center">
+        <image src="../../../assets/search.png" />
+        <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input" bindinput='bindKeyInput' value='{{search}}'></input>
+      </view>
+      <image src="../../../assets/search_close.png" class="close" wx:if="{{search !=''}}" bindtap="empty"></image>
+    </view>
+  </view>
+  <!-- 切换 -->
+  <view class="tabs">
+    <text class="{{current==0 ? 'tabs-color' : ''}}" data-current="0" bindtap="clickTab">进行中</text>
+    <text class="{{current==1 ? 'tabs-color' : ''}}" data-current="1" bindtap="clickTab">进行中</text>
+  </view>
+  <!-- 切换内容 -->
+  <view style="height:{{scrollHeight}}px;" class="swiper-wrapper" current="{{current}}">
+    <!-- 进行中 -->
+    <view class="{{current == 0 ? 'show':'hidden'}}">
+        <view class="content">
+          <view class="ul">
+            <view class="li">
+              <navigator url="../details/details" hover-class="none">
+                <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+                <view class="img">
+                  <image src="../../../assets/index/banner.png" />
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+                <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="number-item">
+                    报名数 15/不限
+                  </view>
+                  <view class="number-picture d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/ellipsis.png" class="ellipsis" />
+                  </view>
+                </view>
+              </navigator>
+            </view>
+            <view class="li">
+              <navigator url="../details/details" hover-class="none">
+                <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+                <view class="img">
+                  <image src="../../../assets/index/banner.png" />
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+                <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="number-item">
+                    报名数 15/不限
+                  </view>
+                  <view class="number-picture d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/ellipsis.png" class="ellipsis" />
+                  </view>
+                </view>
+              </navigator>
+            </view>
+            <view class="li">
+              <navigator url="../details/details" hover-class="none">
+                <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+                <view class="img">
+                  <image src="../../../assets/index/banner.png" />
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+                <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="number-item">
+                    报名数 15/不限
+                  </view>
+                  <view class="number-picture d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/ellipsis.png" class="ellipsis" />
+                  </view>
+                </view>
+              </navigator>
+            </view>
+          </view>
+          <view class="more">没有更多内容啦~</view>
+        </view>
+    </view>
+    <!-- 已结束 -->
+    <view class="{{current == 1 ? 'show':'hidden'}}">
+        <view class="content">
+          <view class="ul">
+            <view class="li">
+              <navigator url="../details/details" hover-class="none">
+                <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+                <view class="img">
+                  <image src="../../../assets/index/banner.png" />
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+                  <view class="dianban d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/dianban.png" /> 11111
+                  </view>
+                </view>
+                <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="number-item">
+                    报名数 15/不限
+                  </view>
+                  <view class="number-picture d-flex flex-nowrap align-items-center">
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/index/banner.png" />
+                    <image src="../../../assets/ellipsis.png" class="ellipsis" />
+                  </view>
+                </view>
+              </navigator>
+            </view>
+          </view>
+          <view class="more">没有更多内容啦~</view>
+        </view>
+    </view>
+
+  </view>
+
+</view>

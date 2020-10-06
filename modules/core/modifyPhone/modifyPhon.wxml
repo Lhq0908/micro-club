@@ -1,0 +1,21 @@
+<view class="core-modify">
+  <view class='m-input line'>
+    <input class="weui-input" auto-focus placeholder="138888888888" />
+  </view>
+  <view class='m-input elastic codell'>
+    <input class="weui-input" auto-focus placeholder="请输入4位数验证码" />
+    <text class='code'>获取验证码</text>
+  </view>
+   <view class="buttom">下一步</view>
+</view>
+<!-- 修改输入新手机号码 -->
+<!-- <view class="core-modify">
+  <view class='m-input line'>
+    <input class="weui-input" auto-focus placeholder="请输入新手机号码" />
+  </view>
+  <view class='m-input elastic codell'>
+    <input class="weui-input" auto-focus placeholder="请输入4位数验证码" />
+    <text class='code'>获取验证码</text>
+  </view>
+   <view class="buttom">立即修改</view>
+</view> -->

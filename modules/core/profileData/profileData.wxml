@@ -1,0 +1,48 @@
+<view class="core-profile">
+  <view class="means-region line">
+    <text>真实姓名</text>
+    <input class="weui-input" auto-focus placeholder="请输入您的真是姓名" />
+  </view>
+  <view class="means-region line">
+    <text>身份证号</text>
+    <input class="weui-input" placeholder="请确保于您证件上的号码一致" />
+  </view>
+  <view class="means-region">
+    <navigator url="../material/material" hover-class="none" class='a'>
+      <text>所在区域</text>
+      <input class="weui-input" placeholder="请选中您的所在区域" />
+      <image src='../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+  <view class="means-region line">
+    <text>手机号码</text>
+    <input class="weui-input" placeholder="请输入您的常用手机号" />
+  </view>
+  <view class="means-region line">
+    <text>验证码</text>
+    <input class="weui-input" placeholder="请输入短信验证码" />
+    <text class='code'>获取验证码</text>
+  </view>
+  <view class="upload">
+    <text>上传证件</text>
+    <view class="upload-contert">
+      <view class="upload-btn" wx:if="{{!imgPersonZ}}">
+        <image class="btn-icon" src="../../../assets/core/realName_upload_icon.png" />
+        <view class="btn-text" bindtap='uploads' data-type="person">上传身份证正面照</view>
+      </view>
+      <view class="upload-btn" wx:else>
+        <image bindtap='delEvent' data-type="person" class="del_icon" src="../../../assets/realName_del_icon.png" />
+        <!-- <image style='width:100%;height:100%;' src="{{imgPersonZ}}" /> -->
+      </view>
+      <view class="upload-btn" wx:if="{{!imgPersonF}}">
+        <image class="btn-icon" src="../../../assets/core/realName_upload_icon.png" />
+        <view class="btn-text" bindtap='uploads' data-type="personf">上传身份证背面照</view>
+      </view>
+      <view class="upload-btn" wx:else>
+        <image bindtap='delEvent' data-type="personf" class="del_icon" src="../../../assets/realName_del_icon.png" />
+        <image style='width:100%;height:100%;' src="{{imgPersonF}}" />
+      </view>
+    </view>
+    <view class="buttom">下一步</view>
+  </view>
+</view>

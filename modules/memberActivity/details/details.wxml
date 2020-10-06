@@ -1,0 +1,82 @@
+<view class="activity-details">
+  <view class="details-top">
+    <view class="title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+    <view class="top-item d-flex flex-nowrap">
+      <text>活动时间：</text>
+      <view>2019-08-08 15:00</view>
+    </view>
+    <view class="top-item d-flex flex-nowrap">
+      <text>活动地点：</text>
+      <view class="address">南宁市西乡塘友爱北路26号大洋百货购物广场</view>
+    </view>
+    <view class="top-item d-flex flex-nowrap ">
+      <text>报名费用：</text>
+      <view class="gratis">免费</view>
+    </view>
+    <view class="top-item d-flex flex-nowrap ">
+      <text>报名截止时间：</text>
+      <view>2019-08-08 15:00</view>
+    </view>
+
+  </view>
+  <!-- 详情内容 -->
+  <view class="details-content">
+    <view class="text">
+      爱香的朋友大多听过沉香精油，沉香精油可谓是沉香之精华，能称作精华肯定有非凡的 使用价值。 作为一个沉香精油工厂的员工，希望能够让大家详细了解一下，一瓶沉香精油，是要经过多少程序才能制作而成。首先，我们的沉香都是采用的野生沉香，沉香结沉是很难得的，野生沉香更是不常有，作为沉香精油提取的原材料，它们的性状都会比较的细碎，油脂的丰腴度也不会太高，需要大量原材料才能提取出来一点。
+    </view>
+    <view class="img">
+      <image src="../../../assets/index/banner.png"></image>
+    </view>
+    <view class="time d-flex flex-nowrap align-items-center justify-content-between">
+      <view class="time-left">2019-08-26 15:00</view>
+      <view class="time-right d-flex flex-nowrap align-items-center justify-content-between">
+        <view class="dianban d-flex flex-nowrap align-items-center">
+          <image src="../../../assets/give.png" />
+          <text class="gratis">22</text>
+        </view>
+        <view>
+          <image src="../../../assets/collect.png" />
+        </view>
+        <view>
+          <image src="../../../assets/share.png" />
+        </view>
+      </view>
+    </view>
+    <view class="btn">我要报名</view>
+    <!-- <view class="btn end">已报名/已截止报名/已结束</view> -->
+  </view>
+  <!-- 报名记录 -->
+  <view class="details-record">
+    <view class="record-title d-flex flex-nowrap align-items-center justify-content-between">
+      <view>报名记录</view>
+      <view class="number">共 0 人报名</view>
+    </view>
+    <!-- <view class="nodata">
+      <image src="../../../assets/weep.png"/>
+      <view>暂时没有哦~</view>
+    </view> -->
+    <view class="record-ul">
+      <view class="record-li d-flex flex-wrap align-items-center">
+        <image src="../../../assets/index/banner.png" />
+        <view>
+          <view class="name">黄小小</view>
+          <view class="enrolment">已于2019-08-09 15:00报名</view>
+        </view>
+      </view>
+      <view class="record-li d-flex flex-wrap align-items-center">
+        <image src="../../../assets/index/banner.png" />
+        <view>
+          <view class="name">黄小小</view>
+          <view class="enrolment">已于2019-08-09 15:00报名</view>
+        </view>
+      </view>
+      <view class="record-li d-flex flex-wrap align-items-center">
+        <image src="../../../assets/index/banner.png" />
+        <view>
+          <view class="name">黄小小</view>
+          <view class="enrolment">已于2019-08-09 15:00报名</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

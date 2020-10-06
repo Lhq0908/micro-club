@@ -1,0 +1,195 @@
+.dynamic-index {
+  /* ---------- 头部 --------- */
+  .top {
+    .dynamic-bg {
+      width: 100%;
+      height: 256rpx;
+      display: block;
+      position: relative;
+    }
+
+    .top-item {
+      position: absolute;
+      top: 40rpx;
+      padding: 0 25rpx;
+
+      image {
+        width: 150rpx;
+        height: 150rpx;
+        display: block;
+        border-radius: 50%;
+        margin-right: 30rpx;
+      }
+
+      .top-item-right {
+        flex: 1;
+        color: #fff;
+
+        .name {
+          font-size: 34rpx;
+        }
+
+        .type {
+          font-size: 24rpx;
+          margin-top: 25rpx;
+
+          text {
+            background: #ffe566;
+            color: #f34b4a;
+            padding-right: 15rpx;
+            padding-left: 8rpx;
+            border-radius: 15rpx;
+            font-style: oblique;
+          }
+        }
+      }
+    }
+  }
+  /* ---------- 切换 --------- */
+  .tabs {
+    display: flex;
+    background-color: #fff;
+    font-size: 28rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    color: #999;
+
+    .tabs-color {
+      color: #4299ff;
+    }
+    .tabs-color:after {
+      content: '';
+      width: 64rpx;
+      height: 5rpx;
+      background: #4299ff;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 153rpx;
+      transition: all 0.3s ease;
+    }
+
+    text {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+
+  }
+  /* ---------- 切换内容 --------- */
+  .swiper-wrapper {
+    .content {
+      .ul {
+        margin: 25rpx;
+        .li {
+          padding: 20rpx 25rpx;
+          background-color: #fff;
+          margin-bottom: 25rpx;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #e8eef5;
+
+          .top-item {
+            margin-bottom: 25rpx;
+
+            image {
+              width: 85rpx;
+              height: 85rpx;
+              display: block;
+              border-radius: 50%;
+              margin-right: 30rpx;
+            }
+
+            .top-item-right {
+              flex: 1;
+              color: #333333;
+
+              .name {
+                font-size: 30rpx;
+              }
+
+              .type {
+                font-size: 24rpx;
+                margin-top: 5rpx;
+                color: #999999;
+
+                text {
+                  background: #ffe566;
+                  color: #f34b4a;
+                  padding-right: 15rpx;
+                  padding-left: 8rpx;
+                  border-radius: 15rpx;
+                  font-style: oblique;
+                }
+              }
+            }
+          }
+
+          .text-item {
+            color: #333333;
+            font-size: 28rpx;
+
+            .img-one {
+              width: 260rpx;
+              height: 370rpx;
+              margin-top:20rpx;
+            }
+            .img-item{
+              margin: 25rpx 0;
+              image{
+                width: 180rpx;
+                height: 180rpx;
+                display: block;
+                margin-bottom: 10rpx;
+                margin-right: 15rpx;
+              }
+            }
+          }
+
+          .time {
+            font-size: 26rpx;
+            color: #999999;
+            margin-top: 20rpx;
+            .time-item {
+              flex: 1;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              margin-right: 20rpx;
+            }
+
+            .dianban {
+              width: 30%;
+              image {
+                width: 30rpx;
+                height: 30rpx;
+                display: inline-block;
+                margin-right: 5rpx;
+              }
+            }
+          }
+          .comment{
+            background-color: #f4f7fa;
+            color: #333333;
+            font-size: 26rpx;
+            margin-top: 15rpx;
+            .comment-item{
+              padding: 22rpx 25rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ---------- 显示隐藏 --------- */
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

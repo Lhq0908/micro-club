@@ -1,0 +1,81 @@
+page {
+  background: #fff;
+}
+
+/* ---------- 搜索 --------- */
+
+.search {
+  background-color: #4299ff;
+  padding: 30rpx 25rpx;
+}
+
+.search image {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 17rpx;
+}
+
+.search view {
+  height: 65rpx;
+  background-color: #fff;
+  padding: 0 25rpx;
+  border-radius: 20px;
+  font-size: 28rpx;
+  color: #b9b9b9;
+}
+
+.search .input {
+  flex: 1;
+}
+
+/* ---------- 区域 --------- */
+
+.region-item {
+  padding: 0 25rpx;
+  margin: 35rpx 0;
+}
+
+.region-item .title {
+  font-size: 32rpx;
+  color: #999;
+  margin-bottom: 25rpx;
+}
+
+.region-item .li {
+  margin-right: 14rpx;
+  background: #f4f4f4;
+  padding: 15rpx 50rpx;
+  border-radius: 30px;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 13rpx;
+}
+
+.region-item .li image {
+  width: 20rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 7rpx;
+}
+
+.region-item .on {
+  color: #4299ff;
+  background-color: #f3f8fe;
+}
+
+/* ---------- 城市列表 --------- */
+
+.city-list .city-letter {
+  font-size: 32rpx;
+  color: #505050;
+  background-color: #f4f4f4;
+  padding: 11rpx 25rpx;
+}
+
+.city-list .li {
+  font-size: 28rpx;
+  color: #333;
+  padding: 25rpx;
+  border-bottom: 1px solid #f4f4f4;
+}

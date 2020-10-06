@@ -1,0 +1,34 @@
+<view class="company-list h-100">
+  <view class="company-list-item">
+    <view class="title d-flex justify-content-between align-items-center">
+      <view class="name">广西南宁环球国际旅行社有限公司</view>
+      <navigator url="../edit/edit" hover-class="none">
+        <view class="action d-flex align-items-center">
+          <image src="../../../../assets/profile/edit.png" />编辑</view>
+      </navigator>
+
+    </view>
+    <view class="content">
+      服务行业 | 简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+    </view>
+  </view>
+  <view class="company-list-item">
+    <view class="title d-flex justify-content-between align-items-center">
+      <view class="name">广西南宁环球国际旅行社有限公司</view>
+      <navigator url="../edit/edit" hover-class="none">
+        <view class="action d-flex align-items-center">
+          <image src="../../../../assets/profile/edit.png" />编辑</view>
+      </navigator>
+
+    </view>
+    <view class="content">
+      服务行业 | 简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+    </view>
+  </view>
+  <view class="btn">
+    <navigator url="../add/add" hover-class="none">
+      <image src='../../../../assets/profile/add.png' />
+    </navigator>
+
+  </view>
+</view>

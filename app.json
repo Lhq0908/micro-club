@@ -1,0 +1,95 @@
+{
+  "pages": [
+    "modules/index/index",
+    "modules/profile/company/add/add",
+    "modules/profile/company/edit/edit",
+    "modules/profile/company/list/list",
+    "modules/profile/setting/setting",
+    "modules/profile/index/index",
+    "modules/region/index",
+    "modules/memberActivity/index/index",
+    "modules/memberActivity/details/details",
+    "modules/success/index",
+    "modules/enterprise/details/index",
+    "modules/enterprise/details/details",
+    "modules/enterprise/dynamic/index",
+    "modules/enterprise/card/index",
+    "modules/enterprise/index/index",
+    "modules/industry/index/index",
+    "modules/industry/details/details",
+    "modules/club/index/index",
+    "modules/club/details/details",
+    "modules/club/map/map",
+    "modules/classroom/index/index",
+    "modules/classroom/list/list",
+    "modules/resource/index/index",
+    "modules/resource/success/success",
+    "modules/resource/details/details",
+    "modules/resource/add/add",
+    "modules/resource/edit/edit",
+    "modules/collection/index/index",
+    "modules/classroom/tutorDetails/tutorDetails",
+    "modules/classroom/tutorList/tutorList",
+    "modules/classroom/classDetails/classDetails",
+    "modules/search/index",
+    "modules/search/search",
+    "modules/core/index/index",
+    "modules/core/means/means",
+    "modules/core/material/material",
+    "modules/core/profileData/profileData",
+    "modules/core/logon/index/index",
+    "modules/core/logon/enterprise/enterprise",
+    "modules/core/success/success",
+    "modules/businessCard/list",
+    "modules/switchSearch/search",
+    "modules/core/myCard/index/index",
+    "modules/core/myCard/indexBlack/index",
+    "modules/core/myCard/indexThree/index",
+    "modules/core/modifyPhone/modifyPhon",
+    "modules/core/myCard/newlyAdded/newlyAdded",
+    "modules/core/myCard/edit/edit",
+    "modules/myMessage/myMessage"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4299ff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f2f4f7"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0c78f7",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "modules/index/index",
+        "iconPath": "assets/index/index.png",
+        "selectedIconPath": "assets/index/indexHL.png"
+      },
+      {
+        "text": "会员课堂",
+        "pagePath": "modules/classroom/index/index",
+        "iconPath": "assets/index/classroom.png",
+        "selectedIconPath": "assets/index/classroomHL.png"
+      },
+      {
+        "text": "资源共享",
+        "pagePath": "modules/resource/index/index",
+        "iconPath": "assets/index/resources.png",
+        "selectedIconPath": "assets/index/resourcesHL.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "modules/core/index/index",
+        "iconPath": "assets/index/center.png",
+        "selectedIconPath": "assets/index/centerHL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

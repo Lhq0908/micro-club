@@ -1,0 +1,129 @@
+.industry-index {
+  /* ---------- 搜索 --------- */
+  .search {
+    background-color: #4299ff;
+    padding: 30rpx 25rpx;
+
+    image {
+      width: 30rpx;
+      height: 30rpx;
+      display: block;
+      margin-right: 17rpx;
+    }
+
+    view {
+      height: 65rpx;
+      background-color: #fff;
+      padding: 0 25rpx;
+      border-radius: 20px;
+      font-size: 28rpx;
+      color: #b9b9b9;
+    }
+
+    .input {
+      flex: 1;
+    }
+  }
+  /* ---------- 行业资讯 --------- */
+  .industry {
+    padding: 0 25rpx;
+    margin-top: 25rpx;
+
+    .head {
+      color: #333333;
+      font-size: 32rpx;
+      margin-bottom: 35rpx;
+    }
+
+    .ul {
+      .li {
+        background: #fff;
+        padding: 35rpx 25rpx;
+        margin-bottom: 15rpx;
+        box-shadow: 0 0 5px #f7f7f7;
+        border-radius: 5px;
+
+        .li-left {
+          width: 175rpx;
+          margin-right: 25rpx;
+          border-radius: 5px;
+
+          image {
+            width: 175rpx;
+            height: 170rpx;
+            border-radius: 5px;
+          }
+        }
+
+        .li-right {
+          flex: 1;
+          font-size: 28rpx;
+          color: #333333;
+
+          .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            white-space: wrap;
+            overflow: hidden;
+            margin-bottom: 35rpx;
+          }
+
+          .margin-b {
+            line-height: 40rpx;
+            margin-bottom: 0;
+          }
+
+          .sort {
+            background: #4299ff;
+            padding: 2rpx 15rpx;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            font-size: 24rpx;
+            margin-top: 5rpx;
+            margin-bottom: 10rpx;
+            display: inline-block;
+          }
+
+          .user {
+            font-size: 26rpx;
+            color: #999999;
+
+            .nickname {
+              flex: 1;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              margin-right: 10rpx;
+            }
+
+            .free {
+              color: #4299ff;
+            }
+
+            .dianban {
+              image {
+                width: 30rpx;
+                height: 30rpx;
+                display: block;
+                margin-right: 5rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      text-align: center;
+      font-size: 24rpx;
+      color: #999;
+      padding: 35rpx 25rpx;
+    }
+  }
+}

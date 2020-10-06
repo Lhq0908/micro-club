@@ -1,0 +1,17 @@
+<view class="success-index">
+  <view class="head">
+    <image src='../../assets/success/success_chenggong.png'></image>
+    <text class="name">报名成功</text>
+    <text class="notes">请准时参加活动哦！</text>
+  </view>
+  <view class="S-center">
+    <view class="S-li" wx:for="{{list}}" wx:key="item">
+      <view class="li-left">{{item.title}}</view>
+      <view class="li-right">{{item.explain}}</view>
+    </view>
+  </view>
+  <view class="button">
+    <view class="buttom-left">返回首页</view>
+    <view class="buttom-ritght">查看详情</view>
+  </view>
+</view>

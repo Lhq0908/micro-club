@@ -1,0 +1,61 @@
+page {
+  height: 100%;
+}
+
+.map-index {
+  height: 100%;
+  position: relative;
+
+  cover-view {
+    white-space: normal !important;
+  }
+
+  .address {
+    position: absolute;
+    bottom: 0;
+
+    .address-item {
+      padding: 25rpx 25rpx 0;
+      margin: 0 25rpx 25rpx;
+      background-color: #fff;
+      border-radius: 5px;
+
+      .address-name {
+        font-size: 34rpx;
+        color: #333333;
+        margin-bottom: 50rpx;
+      }
+
+      .address-t {
+        font-size: 28rpx;
+        color: #999999;
+        padding-bottom: 25rpx;
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      .address-btn {
+        .btn-item {
+          flex: 1;
+          height: 100rpx;
+          line-height: 100rpx;
+          font-size: 32rpx;
+          color: #999999;
+
+          cover-image {
+            width:24rpx;
+            height: 34rpx;
+            margin-right: 10rpx;
+          }
+          .go{
+            width: 33rpx;
+            height: 33rpx;
+          }
+        }
+
+        .btn-item:first-child {
+          border-right: 1px solid #eeeeee;
+        }
+      }
+    }
+  }
+}

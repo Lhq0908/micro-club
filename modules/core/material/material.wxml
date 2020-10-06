@@ -1,0 +1,32 @@
+<view class="core-material">
+  <view class="means-head line" >
+    <navigator url="../material/material" hover-class="none" class='a'>
+      <image src="../../../assets/core/timg.png" class='head-img'></image>
+      <image src='../../../assets/core/fanhui.png'  class='fanhui'></image>
+    </navigator>
+  </view>
+   <view class="means-region line">
+    <navigator url="../means/means" hover-class="none" class='a'>
+      <text>个人资料</text>
+      <image src='../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+ <view class="means-region line">
+    <navigator url="../modifyPhone/modifyPhon" hover-class="none" class='a' >
+      <text>绑定手机</text>
+      <image src='../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+   <view class="means-region">
+    <navigator url="../../profile/company/list/list" hover-class="none" class='a'>
+      <text>企业资料</text>
+      <image src='../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+   <view class="means-region">
+    <navigator url="../../profile/setting/setting" hover-class="none" class='a'>
+      <text>隐私设置</text>
+      <image src='../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+</view>

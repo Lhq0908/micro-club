@@ -1,0 +1,184 @@
+<view class="resource-details">
+  <!-- 内容 -->
+  <view class="content">
+    <view class="ul">
+      <view class="li">
+        <view class="li-top">
+          <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+            <image src="../../../assets/index/banner.png" />
+            <view class="top-item-right">
+              <view class="name">设置你的昵称</view>
+              <view class="type">
+                广西南宁·冶金制造
+                <text>VIP</text>
+              </view>
+            </view>
+          </view>
+          <view class="text-item">
+            <view class="text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+            <view class="text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+            <!-- <image src="../../../assets/index/banner.png" class="img-one" /> -->
+            <view class="img-item d-flex flex-wrap align-items-center">
+              <view wx:for="{{img}}" wx:key="{{index}}">
+                <image src="{{item}}" class="img-one" data-src='{{item}}' bindtap='previewImage' />
+              </view>
+            </view>
+          </view>
+          <view class="time d-flex flex-nowrap align-items-center">
+            <view class="time-item">2019-08-26 15:00</view>
+            <view class=" dianban d-flex flex-nowrap align-items-center justify-content-end">
+              <view>
+                <image src="../../../assets/index/dianban.png" /> 111</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 评论 -->
+  <view class="comment">
+    <!-- 切换 -->
+    <view class="tabs">
+      <view class="tabs-item">
+        <text class="{{current==0 ? 'tabs-color' : ''}}" data-current="0" bindtap="clickTab">全部评论</text>
+        <text class="{{current==1 ? 'tabs-color' : ''}}" data-current="1" bindtap="clickTab">只看楼主</text>
+      </view>
+    </view>
+    <view style="height:{{scrollHeight}}px;" class="comment-list" current="{{current}}">
+      <!-- 全部评论 -->
+      <view class="{{current == 0 ? 'show':'hidden'}}">
+        <view class="content">
+          <view class="ul">
+            <view class="comment-li li">
+              <view class="li-top">
+                <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+                  <image src="../../../assets/index/banner.png" />
+                  <view class="top-item-right">
+                    <view class="name">设置你的昵称</view>
+                  </view>
+                </view>
+                <view class="text-item">
+                  <view class="comment-text">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</view>
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">2019-08-26 15:00</view>
+                  <view class=" dianban d-flex flex-nowrap align-items-center justify-content-between">
+                    <view>
+                      <image src="../../../assets/index/dianban.png" /> 111</view>
+                    <view>
+                      <image src="../../../assets/enterprise/comment.png" /> 111</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="comment-li li">
+              <view class="li-top">
+                <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+                  <image src="../../../assets/index/banner.png" />
+                  <view class="top-item-right">
+                    <view class="name">设置你的昵称</view>
+                  </view>
+                </view>
+                <view class="text-item">
+                  <view class="comment-text">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</view>
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">2019-08-26 15:00</view>
+                  <view class=" dianban d-flex flex-nowrap align-items-center justify-content-between">
+                    <view>
+                      <image src="../../../assets/index/dianban.png" /> 111</view>
+                    <view>
+                      <image src="../../../assets/enterprise/comment.png" /> 111</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 只看楼主 -->
+      <view class="{{current == 1 ? 'show':'hidden'}}">
+        <view class="content">
+          <view class="ul">
+            <view class="comment-li li">
+              <view class="li-top">
+                <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+                  <image src="../../../assets/index/banner.png" />
+                  <view class="top-item-right">
+                    <view class="name">雷小军</view>
+                  </view>
+                </view>
+                <view class="text-item">
+                  <view class="comment-text">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</view>
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">2019-08-26 15:00</view>
+                  <view class=" dianban d-flex flex-nowrap align-items-center justify-content-between">
+                    <view>
+                      <image src="../../../assets/index/dianban.png" /> 111</view>
+                    <view>
+                      <image src="../../../assets/enterprise/comment.png" /> 111</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="comment-li li">
+              <view class="li-top">
+                <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+                  <image src="../../../assets/index/banner.png" />
+                  <view class="top-item-right">
+                    <view class="name">雷小军</view>
+                  </view>
+                </view>
+                <view class="text-item">
+                  <view class="comment-text">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</view>
+                </view>
+                <view class="time d-flex flex-nowrap align-items-center">
+                  <view class="time-item">2019-08-26 15:00</view>
+                  <view class=" dianban d-flex flex-nowrap align-items-center justify-content-between">
+                    <view>
+                      <image src="../../../assets/index/dianban.png" /> 111</view>
+                    <view>
+                      <image src="../../../assets/enterprise/comment.png" /> 111</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 发布评论 -->
+  <view class="release">
+    <view class="release-item d-flex">
+      <view class="release-left" bindtap="popupClick">
+        <view class="input">
+          说说你的看法吧
+        </view>
+      </view>
+      <view class="release-right d-flex flex-nowrap align-items-center justify-content-between">
+        <view class="discuss">
+          <image src="../../../assets/resource/comment_01.png" />
+          <text>99</text>
+        </view>
+        <image src="../../../assets/resource/favorite.png" />
+        <image src="../../../assets/resource/fenxiang.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 评论弹窗 -->
+  <view class="popup-mask" wx:if="{{showModal}}" bindtap="popupClose"></view>
+  <view class="release-popup" wx:if="{{showModal}}">
+    <view class="popup-b">
+      <view class="popup-item d-flex flex-nowrap align-items-center justify-content-between">
+        <view class="input d-flex align-items-center">
+          <view>@黄小小</view>
+          <input placeholder-class="placeholder" class="input" auto-focus="{{true}}" cursor-spacing="140"></input>
+        </view>
+        <view class="btn">发布</view>
+      </view>
+    </view>
+
+  </view>
+</view>

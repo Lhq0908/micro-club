@@ -1,0 +1,36 @@
+<view class="industry-details">
+  <!-- 标题 -->
+  <view class="title">
+    标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+  </view>
+  <view class="nickname">
+    新浪微博·黄小小
+  </view>
+  <!-- 详情内容 -->
+  <view class="details-content">
+    <view class="text">
+      爱香的朋友大多听过沉香精油，沉香精油可谓是沉香之精华，能称作精华肯定有非凡的 使用价值。 作为一个沉香精油工厂的员工，希望能够让大家详细了解一下，一瓶沉香精油，是要经过多少程序才能制作而成。首先，我们的沉香都是采用的野生沉香，沉香结沉是很难得的，野生沉香更是不常有，作为沉香精油提取的原材料，它们的性状都会比较的细碎，油脂的丰腴度也不会太高，需要大量原材料才能提取出来一点。
+    </view>
+    <view class="img">
+      <image src="../../../assets/index/banner.png"></image>
+    </view>
+    <view class="text">
+      爱香的朋友大多听过沉香精油，沉香精油可谓是沉香之精华，能称作精华肯定有非凡的 使用价值。 作为一个沉香精油工厂的员工，希望能够让大家详细了解一下，一瓶沉香精油，是要经过多少程序才能制作而成。首先，我们的沉香都是采用的野生沉香，沉香结沉是很难得的，野生沉香更是不常有，作为沉香精油提取的原材料，它们的性状都会比较的细碎，油脂的丰腴度也不会太高，需要大量原材料才能提取出来一点。
+    </view>
+    <view class="time d-flex flex-nowrap align-items-center justify-content-between">
+      <view class="time-left">2019-08-26 15:00</view>
+      <view class="time-right d-flex flex-nowrap align-items-center justify-content-between">
+        <view class="dianban d-flex flex-nowrap align-items-center">
+          <image src="../../../assets/give.png" />
+          <text class="gratis">22</text>
+        </view>
+        <view>
+          <image src="../../../assets/collect.png" />
+        </view>
+        <view>
+          <image src="../../../assets/share.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!-- // +----------------------------------------------------------------------
+// | 广西西途比网络科技有限公司 www.c2b666.com
+// +----------------------------------------------------------------------
+// | 功能描述: 搜索页面
+// +----------------------------------------------------------------------
+// | 时　　间: 2019/10/07 10:30
+// +----------------------------------------------------------------------
+// | 代码创建: 侯武昌 <741809485@qq.com>
+// +----------------------------------------------------------------------
+// | 版本信息: V1.0.0
+// +----------------------------------------------------------------------
+// | 代码修改:（修改人 - 修改时间）
+// +---------------------------------------------------------------------- -->
+<view class='city-head'>
+  <view class="city-search">
+    <image src='../../assets/search.png' class='image-left'></image>
+    <input type='text' placeholder='请输入关键字进行搜索' value="{{keyword}}" :confirm-type="search" name="account" bindinput="searchClock" style='color:#333;' maxlength='15'></input>
+    <image src="../../assets/close.png"  wx:if="{{iconShow}}" class="search_close" bindtap="emptyClick"></image>
+  </view>
+  <view class="search-button" bindtap='search'>搜索</view>
+</view>
+
+<!-- <view class='history' wx:if="{{history!=''}}"> -->
+<view class='history'>
+  <view class='title'>历史搜索 <image src="../../assets/recovery.png" class='recovery' bindtap="deleteClick"/></view>
+  <view class='history-ul'>
+    <view wx:if="{{item.name !='' && item.name !=null}}" class="history-li" wx:for="{{history}}" wx:key="index" bindtap='onHistory' data-value="{{item.name}}">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='destination'>
+  <view class='title'>热门搜索</view>
+  <view class='history-ul'>
+    <view class="history-li" wx:for="{{historyCity}}" wx:key="index" bindtap='onHistory' data-value="{{item.name}}">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+.club-index {
+  /* ---------- 搜索 --------- */
+  .search {
+    background-color: #4299ff;
+    padding: 30rpx 25rpx;
+
+    image {
+      width: 30rpx;
+      height: 30rpx;
+      display: block;
+      margin-right: 17rpx;
+    }
+
+    view {
+      height: 65rpx;
+      background-color: #fff;
+      padding: 0 25rpx;
+      border-radius: 20px;
+      font-size: 28rpx;
+      color: #b9b9b9;
+    }
+
+    .input {
+      flex: 1;
+    }
+  }
+
+  .club-content {
+    .cate-left {
+      width: 20%;
+      text-align: center;
+
+      .type-nav {
+        display: block;
+        background-color: #f4f4f4;
+        height: 88rpx;
+        line-height: 88rpx;
+        border-bottom: 1px solid #d3d3d3;
+        font-size: 30rpx;
+        color: #333333;
+      }
+    }
+
+    .cate-right {
+      flex: 1;
+      background-color: #fff;
+
+      .club-ul {
+        margin: 0 25rpx;
+
+        .club-li {
+          .club-name {
+            color: #333333;
+            font-size: 30rpx;
+            margin-top: 25rpx;
+          }
+
+          .club-address {
+            padding: 20rpx 0;
+            border-bottom: 1px dashed #dcdcdc;
+
+            image {
+              width: 20rpx;
+              height: 28rpx;
+              margin-top: 5rpx;
+              margin-right: 12rpx;
+            }
+
+            .address {
+              flex: 1;
+              font-size: 24rpx;
+              color: #999999;
+            }
+          }
+
+          .name {
+            padding: 8rpx 0;
+            font-size: 24rpx;
+            color: #999;
+            border-bottom: 1px solid #d3d3d3;
+            view {
+              flex: 1;
+            }
+            image {
+              width: 67rpx;
+              height: 67rpx;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<view class="success-index">
+  <view class="head">
+    <image src='../../../assets/success/success_chenggong.png'></image>
+    <text class="name">发布成功</text>
+  </view>
+  <view class="button">
+    <view class="buttom-left">返回首页</view>
+    <view class="buttom-ritght">查看详情</view>
+  </view>
+</view>

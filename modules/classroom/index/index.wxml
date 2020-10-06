@@ -1,0 +1,182 @@
+<view class="classroom-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="city">南宁</view>
+      <view class="search-input d-flex flex-nowrap align-items-center">
+        <image src="../../../assets/search.png" />
+        <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input" disabled bindinput="bindKeyInput" value='{{value}}'></input>
+        <navigator url="../../search/index" hover-class="none" class='d-flex flex-nowrap align-items-center'>
+          <image src="../../../assets/search.png" />
+          <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input" disabled></input>
+        </navigator>
+      </view>
+      <image src="../../../assets/search_close.png" class="close" wx:if="{{value !=''}}" bindtap="empty"></image>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="top-img">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#ffffff" indicator-color="#d7c6ba" class="swiper-box">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 模块 -->
+  <view class="modular">
+    <view class="modular-item">
+      <view class="ul d-flex flex-wrap align-items-center">
+        <view class="li">
+          <navigator url="../../memberActivity/index/index">
+            <image src="../../../assets/index/member.png" lazy-load="true"></image>
+            <text>会员活动</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../../enterprise/index/index">
+            <image src="../../../assets/index/enterprise.png" lazy-load="true"></image>
+            <text>企业搜索</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../../club/index/index">
+            <image src="../../../assets/index/club.png" lazy-load="true"></image>
+            <text>俱乐部</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../../industry/index/index">
+            <image src="../../../assets/index/industry.png" lazy-load="true"></image>
+            <text>行业资讯</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../../enterprise/index/index">
+            <image src="../../../assets/index/enterprise.png" lazy-load="true"></image>
+            <text>企业搜索</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 导师推荐  -->
+  <view class='c-tutor'>
+    <view class="tutor-title">
+      <text class='title-s'>导师推荐</text>
+      <navigator url="../list/list" class='a'>
+        <text>查看全部</text>
+        <image src='../../../assets/classroom/fanhui.png'></image>
+      </navigator>
+    </view>
+    <view class="tutor-ul">
+      <view class='tutor-li'>
+        <navigator url="../tutorDetails/tutorDetails" class='a'>
+          <view class="tutor-img">
+            <image src='../../../assets/classroom/timg.png' mode="aspectFill"></image>
+            <view class="tutor-img-text">
+              <text>荐</text>
+            </view>
+          </view>
+          <text class='tutor-name'>姓名</text>
+          <text class="tutor-post">资深律师</text>
+        </navigator>
+      </view>
+      <view class='tutor-li'>
+        <view class="tutor-img">
+          <image src='../../../assets/classroom/timg.png' mode="aspectFill"></image>
+          <view class="tutor-img-text">
+            <text>荐</text>
+          </view>
+        </view>
+        <text class='tutor-name'>姓名</text>
+        <text class="tutor-post">资深律师</text>
+      </view>
+      <view class='tutor-li'>
+        <view class="tutor-img">
+          <image src='../../../assets/classroom/timg.png' mode="aspectFill"></image>
+          <view class="tutor-img-text">
+            <text>荐</text>
+          </view>
+        </view>
+        <text class='tutor-name'>姓名</text>
+        <text class="tutor-post">资深律师</text>
+      </view>
+    </view>
+  </view>
+  <!-- 热门课程 -->
+  <view class="c-popular">
+    <view class="popular-title">
+      <text class='title-s'>热门课程</text>
+      <navigator url="../tutorList/tutorList" class='a'>
+        <text>查看全部</text>
+        <image src='../../../assets/classroom/fanhui.png'></image>
+      </navigator>
+    </view>
+    <view class="ul">
+      <view class="li  d-flex flex-nowrap justify-content-between">
+        <navigator url="../classDetails/classDetails" class='d-flex flex-nowrap justify-content-between'>
+          <view class="li-left">
+            <image src="../../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title margin-b">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <text class="sort">分类</text>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="free">
+                会员免费
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li  d-flex flex-nowrap justify-content-between">
+        <view class="li-left">
+          <image src="../../../assets/index/banner.png" />
+        </view>
+        <view class="li-right">
+          <view class="title margin-b">
+            标题标题标题标题标题标题标题标题标题标题标题标题标题
+          </view>
+          <text class="sort">分类</text>
+          <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="free">
+              会员免费
+            </view>
+            <view class="dianban d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/dianban.png" /> 11111
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="li  d-flex flex-nowrap justify-content-between">
+        <view class="li-left">
+          <image src="../../../assets/index/banner.png" />
+        </view>
+        <view class="li-right">
+          <view class="title margin-b">
+            标题标题标题标题标题标题标题标题标题标题标题标题标题
+          </view>
+          <text class="sort">分类</text>
+          <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+            <view class="free">
+              会员免费
+            </view>
+            <view class="dianban d-flex flex-nowrap align-items-center">
+              <image src="../../../assets/index/dianban.png" /> 11111
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 授权用户信息弹框 -->
+<import src="../../../utils/wxApi/component/authDialog.wxml" />
+<template is="msgItem" data="{{..._authdialog_}}" />

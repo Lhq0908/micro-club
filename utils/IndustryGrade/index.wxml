@@ -1,0 +1,30 @@
+<!-- 行业选择 -->
+<view class="g-grade">
+  <view class="g-title">
+    <text>选择所属行业</text>
+    <image src='../../assets/shanchu.png'></image>
+  </view>
+  <view class="regional">
+    <view wx:if="{{province!=''}}" class="{{keys==3?'active':''}} {{receive?'texts':'text'}}" bindtap='choice' data-index="3">{{province}}</view>
+    <view wx:if="{{city!=''}}" class="{{keys==4?'active':''}} {{receive?'texts':'text'}}" bindtap='choice' data-index="4">{{city}}</view>
+    <view wx:if="{{area!=''}}" class="{{keys==5?'active':''}} {{receive?'texts':'text'}}" bindtap='choice' data-index="5">{{area}}</view>
+    <view class="{{receive?'bottom-move':'bottom-moves'}}" style="left:{{left}}%"></view>
+  </view>
+  <view class="region-all">
+    <view class="region-province" hidden="{{provinceShow}}">
+      <view class="item {{item.area_code==oneKeys?'active':''}}" bindtap='choice' data-index="0" data-name="{{item.area_name}}" data-key="{{item.area_code}}" data-title="{{item.area_name}}" wx:for="{{provinces}}" wx:key="index">{{item.area_name}}
+        <image wx:if="{{item.area_code==oneKeys}}" class="tick" src="/assets/radio_button.png" />
+      </view>
+    </view>
+    <view class="region-city" hidden="{{cityShow}}">
+      <view class="item {{item.area_code==twoKeys?'active':''}}" bindtap='choice' data-index="1" data-name="{{item.area_name}}" data-key="{{item.area_code}}" data-title="{{item.area_name}}" wx:for="{{citys}}" wx:key="index">{{item.area_name}}
+        <image wx:if="{{item.area_code==twoKeys}}" class="tick" src="/assets/radio_button.png" />
+      </view>
+    </view>
+    <view class="region-area" hidden="{{areaShow}}">
+      <view class="item {{item.area_code==threeKeys?'active':''}}" bindtap='choice' data-index="2" data-name="{{item.area_name}}" data-key="{{item.area_code}}" data-title="{{item.area_name}}" wx:for="{{areas}}" wx:key="index">{{item.area_name}}
+        <image wx:if="{{item.area_code==threeKeys}}" class="tick" src="/assets/radio_button.png" />
+      </view>
+    </view>
+  </view>
+</view>

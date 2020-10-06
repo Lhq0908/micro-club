@@ -1,0 +1,7 @@
+<!-- 支付成功 -->
+  <view class='core-success'>
+    <image src="../../../assets/core/chenggong.png"></image>
+    <text class="pay">支付成功</text>
+    <view class="payText">恭喜您加入环球旅交法人俱乐部！</view>
+     <view class="buttom">立即去看看</view>
+  </view>

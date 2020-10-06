@@ -1,0 +1,69 @@
+<view class="enterprise-details">
+  <view class="d-business">
+    <image class='bi-img' src='../../../assets/classroom/timg.png'></image>
+    <view class="bi-storage">
+      <image src='../../../assets/en/details/storage.png'></image>
+      存入名片夹
+    </view>
+  </view>
+  <view class="d-contact">
+    <view class="contact-name d-flet">
+      <text class="name">设置你的昵称</text>
+      <view class="contact-phone">
+        <image class="phone-img" src="../../../assets/en/details/phone.png"></image>
+        18888888888
+      </view>
+    </view>
+    <view class="contact-name d-flet">
+      <text>广西南宁环球国际旅行社有限公司</text>
+      <text>董事长</text>
+    </view>
+    <view class="contact-name d-flet">
+      <text>广西南宁环球国际旅行社有限公司</text>
+      <text>CEO</text>
+    </view>
+  </view>
+  <view class="d-company">
+    <view class="company-title">广西南宁环球国际旅行社有限公司</view>
+    <view class="company-ul">
+      <view class="company-li" wx:for="{{list}}" wx:key="item">
+        <view class='li-name'>{{item.title}}</view>
+        <view class='li-explain'>{{item.explain}}</view>
+      </view>
+    </view>
+    <view class="company-img">
+      <image src="../../../assets/en/details/map.png"></image>
+    </view>
+  </view>
+  <view class="d-company">
+    <view class="company-title">广西南宁环球国际旅行社有限公司</view>
+    <view class="company-ul">
+      <view class="company-li" wx:for="{{list}}" wx:key="item">
+        <view class='li-name'>{{item.title}}</view>
+        <view class='li-explain'>{{item.explain}}</view>
+      </view>
+    </view>
+    <view class="company-img">
+      <image src="../../../assets/en/details/map.png"></image>
+    </view>
+  </view>
+  <view class="d-aboutMe">
+    <!-- <view class="abboutMe-name">关于我们</view> -->
+
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper" swiper-item="item-id" style="height:{{height}}px">
+      <!--  -->
+      <view wx:for="{{imgUrls}}" class="block">
+        <navigator url="./details">
+          <view class="aboutMe-title">{{item.title}}</view>
+          <view class="">
+            <swiper-item class="swiper-item">
+              <image src="{{item.img}}" class="slide-image" bindload="setContainerHeight" width="355" height="150" />
+            </swiper-item>
+          </view>
+          <view class="tips">{{item.explain}}</view>
+           </navigator>
+      </view>
+
+    </swiper>
+  </view>
+</view>

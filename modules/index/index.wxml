@@ -1,0 +1,255 @@
+<view class="index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="city">南宁</view>
+      <view class="search-input ">
+        <navigator url="../search/index" hover-class="none" class='d-flex flex-nowrap align-items-center'>
+          <image src="../../assets/search.png" />
+          <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input" disabled></input>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="top-img">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#ffffff" indicator-color="#d7c6ba" class="swiper-box">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 模块 -->
+  <view class="modular">
+    <view class="modular-item">
+      <view class="ul d-flex flex-wrap align-items-center">
+        <view class="li">
+          <navigator url="../memberActivity/index/index" hover-class="none">
+            <image src="../../assets/index/member.png" lazy-load="true"></image>
+            <text>会员活动</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../enterprise/index/index" hover-class="none">
+            <image src="../../assets/index/enterprise.png" lazy-load="true"></image>
+            <text>企业搜索</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../club/index/index" hover-class="none">
+            <image src="../../assets/index/club.png" lazy-load="true"></image>
+            <text>俱乐部</text>
+          </navigator>
+        </view>
+        <view class="li">
+          <navigator url="../industry/index/index" hover-class="none">
+            <image src="../../assets/index/industry.png" lazy-load="true"></image>
+            <text>行业资讯</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 最新活动 -->
+  <view class="activity">
+    <view class="head">最新活动</view>
+    <view class="ul d-flex flex-wrap align-items-center justify-content-between">
+      <view class="li">
+        <image src="../../assets/index/banner.png" />
+      </view>
+      <view class="li">
+        <image src="../../assets/index/banner.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 新入会员-->
+  <view class="new-member">
+    <view class="head">会员之家</view>
+    <view class="ul">
+      <view class="li">
+        <navigator url="../../../../enterprise/details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../../../../enterprise/details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../../../../enterprise/details/details" hover-class="none">
+          <view class="li-top d-flex flex-wrap align-items-center">
+            <image src="../../assets/index/banner.png" />
+            <view class="li-top-right d-flex flex-nowrap align-items-center justify-content-between">
+              <view>
+                <view class="name">黄小小</view>
+                <view class="d-flex flex-nowrap align-items-center justify-content-between">
+                  <view class="profession">VIP</view>
+                  <view class="profession">南宁俱乐部负责人</view>
+                </view>
+              </view>
+              <image src="../../../assets/index/return.png" class="return" />
+            </view>
+          </view>
+          <view class="li-end">
+            <view class="corporate-name d-flex flex-nowrap align-items-center">
+              <image src="../../assets/index/earnest.png" />
+              <view class="">
+                广西西途比科技有限公司 | CEO
+              </view>
+            </view>
+            <view class="corporate-type">广西南宁·科技</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 法人课堂 -->
+  <view class="industry">
+    <view class="head">
+      法人课堂
+    </view>
+    <view class="ul">
+      <view class="li">
+        <navigator url="../../../../enterprise/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title margin-b">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <text class="sort">分类</text>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="free">
+                会员免费
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+
+      </view>
+      <view class="li">
+        <navigator url="../../../../enterprise/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left">
+            <image src="../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title margin-b">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <text class="sort">分类</text>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="free">
+                会员免费
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+
+      </view>
+    </view>
+  </view>
+  <!-- 行业资讯 -->
+  <view class="industry">
+    <view class="head">
+      行业资讯
+    </view>
+    <view class="ul">
+      <view class="li">
+        <navigator url="../../../../industry/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left-one">
+            <image src="../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+      <view class="li">
+        <navigator url="../../../../industry/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+          <view class="li-left-one">
+            <image src="../../assets/index/banner.png" />
+          </view>
+          <view class="li-right">
+            <view class="title">
+              标题标题标题标题标题标题标题标题标题标题标题标题标题
+            </view>
+            <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+              <view class="nickname">
+                新浪微博·黄小小
+              </view>
+              <view class="dianban d-flex flex-nowrap align-items-center">
+                <image src="../../assets/index/dianban.png" /> 11111
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="more">没有更多内容啦~</view>
+  </view>
+</view>
+<!-- 授权用户信息弹框 -->
+<import src="../../utils/wxApi/component/authDialog.wxml" />
+<template is="msgItem" data="{{..._authdialog_}}" />

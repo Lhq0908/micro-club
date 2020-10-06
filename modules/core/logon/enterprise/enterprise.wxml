@@ -1,0 +1,69 @@
+<view class="core-profile">
+  <view class="means-region line">
+    <text>公司名称</text>
+    <input class="weui-input" auto-focus placeholder="请输入公司名称" />
+  </view>
+  <view class="means-region line">
+    <text>职位名称</text>
+    <input class="weui-input" placeholder="请输入您的职位名称" />
+  </view>
+  <view class="means-region line">
+    <text>统一代码</text>
+    <input class="weui-input" placeholder="请输入统一社会信用代码" />
+  </view>
+   <view class="means-region line">
+    <view class='a'>
+      <text>所属行业</text>
+      <input class="weui-input" placeholder="请选择所属行业" />
+      <image src='../../../../assets/core/fanhui.png' class='fanhui'></image>
+    </view>
+  </view>
+  <view class="means-region">
+    <text>主营业务</text>
+    <input class="weui-input" placeholder="请描述主营业务，100字符" />
+  </view>
+  <view class="means-region line">
+    <text>联系电话</text>
+    <input class="weui-input" placeholder="请输入企业联系电话" />
+  </view>
+  <view class="means-region line">
+    <text>邮箱地址</text>
+    <input class="weui-input" placeholder="请输入邮箱地址" />
+  </view>
+  <view class="means-region line" bindtap='show'>
+    <view  class='a'>
+      <text>所在区域</text>
+      <input class="weui-input" placeholder="请选择公司所在区域" value="{{address}}"/>
+      <image src='../../../../assets/core/fanhui.png' class='fanhui'></image>
+    </view>
+  </view>
+  <view class="means-region line">
+    <text>详细地址</text>
+    <input class="weui-input" placeholder="请输入公司详细地址" />
+  </view>
+ <view class="means-region">
+    <navigator url="../../material/material" hover-class="none" class='a'>
+      <text>地图定位</text>
+      <input class="weui-input" placeholder="请选择公司位置" />
+      <image src='../../../../assets/core/fanhui.png' class='fanhui'></image>
+    </navigator>
+  </view>
+  <view class="upload">
+    <text>上传证件</text>
+    <view class="upload-contert">
+      <view class="upload-btn" wx:if="{{!imgPersonZ}}">
+        <image class="btn-icon" src="../../../../assets/core/realName_upload_icon.png" />
+        <view class="btn-text" bindtap='uploads' data-type="person">上传营业执照</view>
+      </view>
+      <view class="upload-btn" wx:else>
+        <image bindtap='delEvent' data-type="person" class="del_icon" src="../../../assets/realName_del_icon.png" />
+        <!-- <image style='width:100%;height:100%;' src="{{imgPersonZ}}" /> -->
+      </view>
+    </view>
+    <view class="buttom">提交</view>
+  </view>
+</view>
+
+<i-regionAddress regionShow="{{regionShow}}" bind:change="onChange" bind:changes="onShows"></i-regionAddress>
+<!-- <i-IndustryGrade regionShow="{{regionShow}}" bind:change="onChange" bind:changes="onShows"></i-IndustryGrade> -->
+

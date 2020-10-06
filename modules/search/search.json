@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "i-tabs": "../../plugins/iview/tabs/index",
+    "i-tab": "../../plugins/iview/tab/index"
+  }
+}

@@ -1,0 +1,84 @@
+.core-profile {
+  .line {
+    border-bottom: 1px solid #eee;
+  }
+  // 填写个人资料
+  .means-region {
+    background-color: #fff;
+    padding: 0 25rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 30rpx;
+    color: #333;
+    display: flex;
+    align-items: center;
+
+    text {
+      width: 150rpx;
+      display: block;
+    }
+
+    .weui-input {
+      width: 531rpx;
+    }
+    /*----------------- 所在区域 ---------*/
+    .a {
+      font-size: 30rpx;
+      color: #333;
+      display: flex;
+      align-items: center;
+
+      .fanhui {
+        width: 11rpx;
+        height: 21rpx;
+        display: block;
+      }
+    }
+  }
+
+  .means-region:nth-child(6) {
+    margin-top: 16rpx;
+  }
+  // 上传证件
+  .upload {
+    background-color: #fff;
+    padding-bottom: 86rpx;
+    margin-top: 16rpx;
+    text {
+      display: block;
+      background-color: #fff;
+      padding: 42rpx 25rpx;
+      font-size: 30rpx;
+      color: #333;
+    }
+    .upload-contert{
+      .upload-btn{
+        margin:0 auto 64rpx;
+        border:1px solid red;
+        width: 512rpx;
+        height: 320rpx;
+        border:1px solid #999;
+        text-align: center;
+        font-size: 30rpx;
+        color:#999;
+        .btn-icon{
+          width: 36rpx;
+          height: 36rpx;
+          margin-top: 105rpx;
+          margin-bottom: 46rpx;
+        }
+      }
+    }
+    .buttom{
+      width: 526rpx;
+      background-color: #4299ff;
+      height: 84rpx;
+      border-radius: 42rpx;
+      text-align: center;
+      color:#fff;
+      font-size: 32rpx;
+      margin: 0 auto;
+      line-height: 84rpx;
+    }
+  }
+}

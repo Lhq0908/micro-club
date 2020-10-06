@@ -1,0 +1,128 @@
+.activity-index .search {
+  width: 100%;
+  background: #4299ff;
+  padding: 30rpx 0;
+}
+
+.activity-index .search .btn{
+  float: right;
+  margin-top: -60rpx;
+  font-size: 28rpx;
+  margin-right: 24rpx;
+  color: #fff
+}
+
+.activity-index .mask {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.activity-index .mask .cityName {
+  font-size: 28rpx;
+  padding: 25rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+/* 当前城市 */
+.this-city .top {
+  display: flex;
+  font-size: 32rpx;
+  margin: 32rpx 32rpx;
+}
+
+.this-city .top .title{
+  flex: 1;
+  color: #666666;
+}
+
+.this-city .top .setting{
+  color: #4299ff;
+}
+
+.this-city .button{
+  font-size: 28rpx;
+  color: #4299ff;
+  padding: 12rpx 0;
+  width: 164rpx;
+  border-radius: 35rpx;
+  margin-left: 32rpx;
+  text-align: center;
+}
+
+/*热门城市*/
+.popular .title {
+  color: #666666;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  margin-left: 32rpx;
+}
+
+.popular .citys {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 31rpx;
+  margin: 0 32rpx;
+  justify-content: space-around;
+  padding-bottom: 50rpx;
+}
+
+.popular .citys .city{
+  width: 150rpx;
+  font-size: 28rpx;
+  line-height: 63rpx;
+  text-align: center;
+  height: 63rpx;
+  margin-top: 16rpx;
+  background-color: #eee;
+  border-radius: 32rpx;
+}
+
+/*城市列表*/
+.selectCity .cityList .title{
+  width: 100%;
+  background-color: #eee;
+  font-size: 32rpx;
+  padding: 10rpx 25rpx;
+}
+
+.selectCity .cityList .city{
+  font-size: 28rpx;
+  padding: 25rpx 25rpx;
+  border-bottom: 1rpx solid rgb(224, 223, 223);
+}
+
+.hover{
+  background-color: #e2efff;
+
+}
+
+.activity-index .search .search-item {
+  background-color: #fff;
+  margin: 0 25rpx;
+  width: 560rpx;
+  padding: 9rpx 25rpx;
+  border-radius: 40rpx;
+}
+
+.activity-index .search .search-item .search-input {
+  flex: 1;
+}
+
+.activity-index .search .search-item .search-input image {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 17rpx;
+}
+
+.activity-index .search .search-item .search-input .input {
+  font-size: 28rpx;
+}
+
+.activity-index .search .search-item .close {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 17rpx;
+}

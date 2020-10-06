@@ -1,0 +1,57 @@
+<view class="club-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="d-flex align-items-center">
+      <image src="../../../assets/search.png"></image>
+      <input placeholder="请输入关键字搜索" placeholder-class="placeholder" class="input" bindinput='getSearch' value="{{search}}"></input>
+      <image src="../../../assets/search_close.png" wx:if="{{search !=''}}" bindtap='empty'></image>
+    </view>
+  </view>
+  <view class="club-content d-flex flex-nowrap align-items-center">
+    <!-- 左侧 一级分类 -->
+    <scroll-view class="cate-left d-flex" scroll-y="{{ true }}" style="height: {{ scrollHeight }}px; ">
+      <text class="type-nav">热门</text>
+      <text bindtap="selectNav" class="type-nav" data-id="{{ item.category_id }}" data-index="{{index}}" wx:for="{{list}}" wx:key="cateLeft">{{item}}</text>
+    </scroll-view>
+    <!-- 右侧 二级分类 -->
+    <scroll-view class="cate-right" scroll-y="true" style="height: {{ scrollHeight }}px; ">
+      <view class="club-ul">
+        <view class="club-li">
+          <navigator url="../details/details" hover-class="none">
+            <view class="club-name">
+              南宁俱乐部
+            </view>
+            <view class="club-address d-flex flex-nowrap align-items-start">
+              <image src="../../../assets/address.png" />
+              <view class="address">
+                广西南宁市友爱北路26号广西电影集团商务区-广西南宁环球国旅集团办公楼3层
+              </view>
+            </view>
+            <view class="name  d-flex flex-nowrap align-items-center">
+              <view>会长：黄小小</view>
+              <image src="../../../assets/index/banner.png" />
+            </view>
+          </navigator>
+        </view>
+        <view class="club-li">
+          <navigator url="../details/details" hover-class="none">
+            <view class="club-name">
+              南宁俱乐部
+            </view>
+            <view class="club-address d-flex flex-nowrap align-items-start">
+              <image src="../../../assets/address.png" />
+              <view class="address">
+                广西南宁市友爱北路26号广西电影集团商务区-广西南宁环球国旅集团办公楼3层
+              </view>
+            </view>
+            <view class="name  d-flex flex-nowrap align-items-center">
+              <view>会长：黄小小</view>
+              <image src="../../../assets/index/banner.png" />
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

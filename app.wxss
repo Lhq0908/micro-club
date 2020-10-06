@@ -1,0 +1,26 @@
+@import 'lib/weui/weui.wxss';
+@import 'plugins/bootstrap/bootstrap.min.wxss';
+@import 'utils/wxApi/component/authDialog.wxss';
+@import 'utils/loading/loading.wxss';
+ button,html [type="button"],[type="reset"],[type="submit"] {
+-webkit-appearance:none;
+}
+page{
+  background: #f2f4f7;
+  background: #f3f7fa;
+  height: 100%;
+}
+.more {
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+  padding: 35rpx 25rpx;
+}
+.elastic {
+  display: flex;
+  align-items: center;
+}
+/*---------- ±ß¿òµ×Ïß -------*/
+.line {
+   border-bottom: 1px solid #eee;
+}

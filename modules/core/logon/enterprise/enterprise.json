@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "填写企业资料",
+  "usingComponents": {
+    "i-regionAddress": "../../../../utils/regionAddress/index"
+  }
+}

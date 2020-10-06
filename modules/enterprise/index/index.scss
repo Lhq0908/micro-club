@@ -1,0 +1,112 @@
+.enterprise-index {
+  /* ---------- 搜索 --------- */
+  .search {
+    background-color: #4299ff;
+    padding: 30rpx 25rpx;
+
+    image {
+      width: 30rpx;
+      height: 30rpx;
+      display: block;
+      margin-right: 17rpx;
+    }
+
+    view {
+      height: 65rpx;
+      background-color: #fff;
+      padding: 0 25rpx;
+      border-radius: 20px;
+      font-size: 28rpx;
+      color: #b9b9b9;
+    }
+
+    .input {
+      flex: 1;
+    }
+  }
+  /* ---------- 列表  --------- */
+  .new-member {
+    padding: 0 25rpx;
+    margin-top: 25rpx;
+
+    .head {
+      color: #333333;
+      font-size: 32rpx;
+      margin-bottom: 35rpx;
+    }
+
+    .ul {
+      .li {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #f7f7f7;
+        margin-bottom: 15rpx;
+
+        .li-top {
+          padding: 25rpx;
+          border-bottom: 1px solid #eeeeee;
+
+          image {
+            width: 83rpx;
+            height: 83rpx;
+            border-radius: 50%;
+            margin-right: 15rpx;
+          }
+
+          .li-top-right {
+            flex: 1;
+
+            .name {
+              font-size: 30rpx;
+              color: #333;
+            }
+
+            .profession {
+              background-color: #e14906;
+              padding: 5rpx 17rpx;
+              font-size: 20rpx;
+              color: #fff;
+              border-radius: 5px;
+              margin-right: 8rpx;
+            }
+
+            .return {
+              width: 16rpx;
+              height: 29rpx;
+            }
+          }
+        }
+
+        .li-end {
+          padding: 25rpx;
+
+          .corporate-name {
+            width: 100%;
+            color: #333333;
+            font-size: 28rpx;
+
+            image {
+              width: 34rpx;
+              height: 35rpx;
+              margin-right: 12rpx;
+            }
+
+            view {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+          }
+
+          .corporate-type {
+            font-size: 28rpx;
+            color: #999;
+            margin-top: 15rpx;
+          }
+        }
+      }
+    }
+  }
+}

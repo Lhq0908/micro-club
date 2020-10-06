@@ -1,0 +1,191 @@
+<view class="collection-index">
+  <!-- 切换 -->
+  <view class="tabs">
+    <text wx:for="{{tabs}}" wx:for-index="index" wx:key="index" bindtap="tabClick" class="{{current==index ? 'tabs-color' : ''}}" data-index="{{index}}">{{item}}</text>
+  </view>
+  <!-- 切换内容 -->
+  <swiper style="height:{{scrollHeight}}px;" class="swiper-wrapper" current="{{current}}">
+    <!-- 活动-->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+        <view class="activity-content">
+          <view class="ul">
+            <view class="d-flex li-item">
+              <view class="checked" hidden="{{hiddenName}}">
+                <checkbox checked="{{item.checked}}" />
+              </view>
+              <view class="li" wx:for="{{list}}" wx:key="{{id}}">
+                <navigator url="../../memberActivity/details/details" hover-class="none">
+                  <view class="title">{{item.title}}</view>
+                  <view class="img">
+                    <image src="../../../assets/index/banner.png" />
+                  </view>
+                  <view class="time d-flex flex-nowrap align-items-center">
+                    <view class="time-item">广西南宁·截至2019-08-08 15:00</view>
+                    <view class="dianban d-flex flex-nowrap align-items-center">
+                      <image src="../../../assets/index/dianban.png" /> 11111
+                    </view>
+                  </view>
+                  <view class="number d-flex flex-nowrap align-items-center justify-content-between">
+                    <view class="number-item">
+                      报名数 15/不限
+                    </view>
+                    <view class="number-picture d-flex flex-nowrap align-items-center">
+                      <image src="../../../assets/index/banner.png" />
+                      <image src="../../../assets/index/banner.png" />
+                      <image src="../../../assets/index/banner.png" />
+                      <image src="../../../assets/index/banner.png" />
+                      <image src="../../../assets/index/banner.png" />
+                      <image src="../../../assets/ellipsis.png" class="ellipsis" />
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+          </view>
+          <view class="more">没有更多内容啦~</view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 课程-->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+        <view class="course-content">
+          <view class="ul">
+            <view class="d-flex li-item">
+              <view class="checked" hidden="{{hiddenName}}">
+                <checkbox checked="{{item.checked}}" />
+              </view>
+              <view class="li">
+                <navigator url="../../enterprise/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+                  <view class="li-left-one">
+                    <image src="../../../assets/index/banner.png" />
+                  </view>
+                  <view class="li-right">
+                    <view class="title margin-b">
+                      标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <text class="sort">分类</text>
+                    <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+                      <view class="free">
+                        会员免费
+                      </view>
+                      <view class="dianban d-flex flex-nowrap align-items-center">
+                        <image src="../../../assets/index/dianban.png" /> 11111
+                      </view>
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 资源 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+        <view class="resource-content">
+          <view class="ul">
+            <view class="d-flex li-item">
+              <view class="checked" hidden="{{hiddenName}}">
+                <checkbox checked="{{item.checked}}" />
+              </view>
+              <view class="li">
+                <view class="li-top">
+                  <view class="top-item d-flex flex-nowrap align-items-center justify-content-between">
+                    <image src="../../../assets/index/banner.png" />
+                    <view class="top-item-right">
+                      <view class="name">设置你的昵称</view>
+                      <view class="type">
+                        广西南宁·冶金制造
+                        <text>VIP</text>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="text-item">
+                    <view class="text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+                    <!-- <image src="../../../assets/index/banner.png" class="img-one" /> -->
+                  <view class="img-item d-flex flex-wrap align-items-center">
+                    <view wx:for="{{img}}" wx:key="{{index}}">
+                      <image src="{{item}}" class="img-one" data-src='{{item}}' bindtap='previewImage' />
+                    </view>
+                  </view>
+                  </view>
+                  <view class="time d-flex flex-nowrap align-items-center">
+                    <view class="time-item">2019-08-26 15:00</view>
+                    <view class=" dianban d-flex flex-nowrap align-items-center justify-content-between">
+                      <view>
+                        <image src="../../../assets/enterprise/comment.png" />11</view>
+                      <view>
+                        <image src="../../../assets/index/dianban.png" /> 111</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="more">没有更多内容啦~</view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 资讯 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+        <view class="course-content">
+          <view class="ul">
+            <view class="d-flex li-item">
+              <view class="checked" hidden="{{hiddenName}}">
+                <checkbox checked="{{item.checked}}" />
+              </view>
+              <view class="li">
+                <navigator url="../../industry/details/details" class="d-flex flex-nowrap justify-content-between" hover-class="none">
+                  <view class="li-left">
+                    <image src="../../../assets/index/banner.png" />
+                  </view>
+                  <view class="li-right">
+                    <view class="title">
+                      标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="user d-flex flex-nowrap align-items-center justify-content-between">
+                      <view class="nickname">
+                        新浪微博·黄小小
+                      </view>
+                      <view class="dianban d-flex flex-nowrap align-items-center">
+                        <image src="../../../assets/index/dianban.png" /> 11111
+                      </view>
+                    </view>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="more">没有更多内容啦~</view>
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+  <!-- 选择 -->
+  <view class="delete-btn" wx:if="{{!hiddenName}}">
+    <view class="btn-item d-flex flex-nowrap align-items-center justify-content-between">
+      <view class="select d-flex align-items-center ">
+        <view class="checked" hidden="{{hiddenName}}">
+          <checkbox checked="{{item.checked}}" />
+        </view>全选
+      </view>
+      <view class="btn" bindtap="del">
+        删除选中
+      </view>
+    </view>
+  </view>
+  <!-- 管理 -->
+  <view class="manage-btn" bindtap="manageClick">
+    <image src="../../../assets/resource/manage.png" wx:if="{{hiddenName}}" />
+  </view>
+  <view class="manage-btn" bindtap="manageClick" wx:if="{{!hiddenName}}">
+    <image src="../../../assets/resource/cancel.png" />
+  </view>
+</view>

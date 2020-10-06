@@ -1,0 +1,8 @@
+<!-- 个人中心 -->
+<view class="profile-index">
+    <view class="profile-header">
+        <view class="info"></view>
+        <view class="menu"></view>
+    </view>
+    <view class="profile-content"></view>
+</view>

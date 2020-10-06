@@ -1,0 +1,176 @@
+.classroom-list {
+  /* ---------- 搜索 --------- */
+  .search {
+    width: 100%;
+    background: #4299ff;
+    padding: 30rpx 0;
+
+    .search-item {
+      background-color: #fff;
+      margin: 0 25rpx;
+      padding: 9rpx 25rpx;
+      border-radius: 40rpx;
+
+      .city {
+        width: 80rpx;
+        font-size: 28rpx;
+        color: #b9b9b9;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: wrap;
+        overflow: hidden;
+        border-right: 1px solid #eee;
+        margin-right: 10rpx;
+      }
+
+      .search-input {
+        flex: 1;
+
+        image {
+          width: 30rpx;
+          height: 30rpx;
+          display: block;
+          margin-right: 17rpx;
+        }
+
+        .input {
+          font-size: 28rpx;
+        }
+      }
+
+      .close {
+        width: 30rpx;
+        height: 30rpx;
+        display: block;
+        margin-right: 17rpx;
+      }
+    }
+  }
+  /* ---------- 切换 --------- */
+  .tabs {
+    display: flex;
+    background-color: #fff;
+    font-size: 28rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    color: #999;
+
+    .tabs-color {
+      color: #4299ff;
+      border-bottom: 2px solid #4299ff;
+      width: 100%;
+    }
+
+    text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .bottom-move {
+      position: absolute;
+      width: 20%;
+      height: 4rpx;
+      background-color: #4299ff;
+      top: 87rpx;
+      left: 110rpx;
+      transition: all 0.3s ease;
+      z-index: 3;
+    }
+  }
+  /*----------- 列表 -----------*/
+  .c-list {
+    margin: 25rpx;
+
+    .ul {
+      .li {
+        background: #fff;
+        padding: 25rpx 25rpx 15rpx;
+        margin-bottom: 15rpx;
+        box-shadow: 0 0 5px #f7f7f7;
+        border-radius: 5px;
+
+        .li-left {
+          width: 256rpx;
+          margin-right: 25rpx;
+          border-radius: 5px;
+
+          image {
+            width: 256rpx;
+            height: 190rpx;
+            border-radius: 5px;
+          }
+        }
+
+        .li-right {
+          flex: 1;
+          font-size: 30rpx;
+          color: #333333;
+
+          .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            white-space: wrap;
+            overflow: hidden;
+            margin-bottom: 35rpx;
+          }
+
+          .margin-b {
+            line-height: 40rpx;
+            margin-bottom: 0;
+          }
+
+          .sort {
+            background: #4299ff;
+            padding: 2rpx 15rpx;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            font-size: 24rpx;
+            margin-top: 5rpx;
+            margin-bottom: 10rpx;
+            display: inline-block;
+          }
+
+          .user {
+            font-size: 26rpx;
+            color: #999999;
+
+            .nickname {
+              flex: 1;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              margin-right: 10rpx;
+            }
+
+            .free {
+              color: #4299ff;
+            }
+
+            .dianban {
+              image {
+                width: 30rpx;
+                height: 30rpx;
+                display: block;
+                margin-right: 5rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+<view class="businessCard-index">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-item d-flex flex-nowrap align-items-center">
+      <view class="search-input d-flex flex-nowrap align-items-center">
+        <image src="/assets/search.png" />
+        <input placeholder="请输入关键词进行搜索" placeholder-class="placeholder" class="input"></input>
+        <image src="/assets/search_close.png" class="close"></image>
+      </view>
+      <button class="city" bindtap="setPlain">搜索</button>
+    </view>
+  </view>
+
+  <!-- 内容 -->
+  <swiper style="height:{{scrollHeight}}px;" class="swiper-wrapper" current="{{current}}" bindchange="swiperChange">
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;">
+        <view class="contentBox" style="height:auto">
+          <checkbox-group bindchange="checkboxChange">
+            <!-- 分组 -->
+            <view class="contentBox-item" wx:for="{{['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']}}" wx:for-item="i">
+              <view class="contentBox-item-title">{{i}}</view>
+              <view class="contentBox-item-broder"></view>
+              <view class="list-box">
+                <!-- 具体子项 -->
+                <view wx:for="{{[1, 2, 3]}}" wx:for-item="j">
+                  <label style="{{editOpen?'':'display:none'}}">
+                    <checkbox value="{{j}}" checked="{{j}}" />
+                  </label>
+                  <view class="{{editOpen?'list-item list-item-open':'list-item'}}" style="background:{{'#4299ff'}}">
+                    <image bindtap="previewImage" src="/assets/businessCard_01.png"></image>
+                    <view class="list-item-title-box">
+                      <view class="name">黄晓晓</view>
+                      <view class="content">广西南宁环球国际旅行社有限公司\r\n广西南宁环球国际旅行社有限公司</view>
+                      <view class="address">这是地址</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </checkbox-group>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 编辑按钮 -->
+  <view bindtap="edit" class="resource-btn">
+    <image src="/assets/resource/release_icon.png" lazy-load/>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+.core-success{
+  background-color: #fff;
+  margin: 25rpx;
+  height: 96%;
+  text-align: center;
+  border-radius:10rpx; 
+  image{
+    width: 144rpx;
+    height: 144rpx;
+    border-radius: 50%;
+    margin-top: 220rpx;
+  }
+  .pay{
+    font-size: 34rpx;
+    color:#4299ff;
+    margin:46rpx 0 39rpx;
+    display: block;
+  }
+  .payText{
+    font-size: 28rpx;
+    color:#999;
+    text-align: center;
+    margin-bottom:39rpx;
+  }
+  .buttom{
+    width: 526rpx;
+    background-color: #4299ff;
+    height: 84rpx;
+    border-radius: 42rpx;
+    text-align: center;
+    color:#fff;
+    font-size: 32rpx;
+    margin: 0 auto;
+    line-height: 84rpx;
+  }
+}

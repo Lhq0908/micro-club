@@ -1,0 +1,43 @@
+<view class="resource-add">
+  <textarea class="textarea-bg" placeholder="请简单描述您的信息~" bindblur="getDataBindTap" maxlength="-1" />
+  <view class="picture-box d-flex flex-wrap">
+    <view class="upload" bindtap='upload'>
+      <image class="img" src="../../../assets/resource/upload_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+    <view class="picture">
+      <image class="img" src="../../../assets/index/banner.png" />
+      <image class="del-icon" bindtap='deletes' src="../../../assets/resource/del_icon.png" />
+    </view>
+  </view>
+  <view class="btn">
+    <image src='../../../assets/resource/submit.png'/>
+  </view>
+</view>

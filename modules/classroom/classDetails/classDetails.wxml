@@ -1,0 +1,61 @@
+<view class="cr-classDetails">
+  <view class="cd-head">
+    <view class="seePicture">
+      <view class="seePicture-img" >
+        <image bindtap="imgYu"  wx:for="{{imgUrls}}" wx:key="index" wx:for-item="dImg" data-list="{{imgUrls}}" data-src="{{dImg}}" src="{{dImg}}"></image>
+      </view>
+      <view class="seeSum">
+        <image src="../../../assets/classroom/img.png"></image>
+        <text>1/255</text>
+      </view>
+    </view>
+    <view class="cd-tiles">标题标题标题标题标题标题标题标题</view>
+    <view class="cd-class">
+      <text>分类</text>
+    </view>
+    <view class="cd-member">
+      <text class="hun">会员免费</text>
+      <view class="member-right">
+        <view class="spot" wx:if="{{dianzan ==true}}">
+          <image  src="../../../assets/classroom/dianzan.png"></image>221</view>
+           <view class="spot"   wx:if="{{dianzan==false}}" style="color:#999">
+          <image src="../../../assets/classroom/d_lower.png"></image>221</view>
+        <image wx:if="{{stars==true}}" class="collect" src="../../../assets/classroom/stars.png"></image>
+          <image wx:else class="collect" src="../../../assets/classroom/s_lower.png"></image>
+        <image class="share" src="../../../assets/classroom/fenxiang.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 导师介绍 -->
+  <view class="cd-tutor">
+    <view class="tutor">导师介绍</view>
+    <view class="tutor-head">
+      <view class="head-img">
+        <image src="../../../assets/classroom/haed.png"></image>
+      </view>
+      <view class="head-right">
+        <view class='right-top'>
+          <text class="topName"> 名字</text>
+          <text>999位学员</text>
+        </view>
+        <navigator url="../tutorList/tutorList" class="a">
+          <text>TA课程</text>
+          <image src="../../../assets/classroom/fanhui.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="tutor-center">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介</view>
+  </view>
+
+  <!-- 课程介绍 -->
+  <view class="cd-root">
+    <view class="rootNmae">课程介绍</view>
+    <view class="root-center">
+      <view class="root-text">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介</view>
+      <image src="../../../assets/classroom/center.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 授权用户信息弹框 -->
+<import src="../../../utils/wxApi/component/authDialog.wxml" />
+<template is="msgItem" data="{{..._authdialog_}}" />
